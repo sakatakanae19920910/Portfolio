@@ -1,0 +1,41 @@
+Label,Command,Speaker,Text,Args
+# ==================== 1章1節1項: 遡上 ====================
+Ev_1_1_1Start,TextFade,,――どこまでも暗い水の底。,time=2
+,TextFade,,"ゆるやかな流れに身を委ねていると、¥nどこへ向かっているのかさえ分からなくなる。",time=3
+,TextFade,,"――遠くから、歌が聞こえる。¥n懐かしく、優しい。それでいて切ない歌声。",time=3
+,MonologueFade,,（……誰……？）,time=2
+,TextFade,,その瞬間、流れが強まる。,time=2
+,TextFade,,"水が背を押し、どこか遠くへと運ぼうとする。",time=2
+,TextFade,,"このまま流されてしまえば、楽なのかもしれない。",time=2
+,TextFade,,"だが、胸の奥から何かが突き上げるような衝動が生まれた。¥n――行かなきゃ。進まなきゃ。",time=3
+,TextFade,,"これは、遡上だ。",time=2
+,TextFade,,"どれだけ水が押し戻しても、進まなくてはならない。",time=2
+,TextFade,,前へ、前へ――何度でも。,time=2
+,TextFade,,"視線の先に、ひとつの後ろ姿がある。",time=2
+,TextFade,,"水の向こうで、儚く揺れる影。",time=2
+,TextFade,,――ずっと探していた。,time=2
+,TextFade,,"何度繰り返しても、どれだけ苦しくても――¥nただ、あの温もりのそばに帰りたいとだけ、願っていた。",time=3
+,TextFade,,"水に抗いながら、喉の奥から声を絞り出す。",time=2
+,TextWait,,「……待って！」,time=2
+,TextFade,,その声は――,time=3
+# ==================== 主人公選択 ====================
+Ev_1_1_1Choice,Choice,,"低く、まっすぐな響きだ",jumpTo=Set_Nagi
+,Choice,,"高く、凛とした響きだ",jumpTo=Set_Mizuki
+,Stop,,,
+# ==================== フラグ設定 ====================
+Set_Nagi,SetFlag,,,flag=Nagi_Route
+,Jump,,,jumpTo=Ev_1_1_1AfterChoice
+Set_Mizuki,SetFlag,,,flag=Mizuki_Route
+,Jump,,,jumpTo=Ev_1_1_1AfterChoice
+# ==================== 選択後の共通パート ====================
+Ev_1_1_1AfterChoice,TextFade,,"どれだけ水が冷たくても、もう止まれはしない。",time=2
+,TextFade,,光が差し込む。,time=2
+,TextFade,,そして――視界が白く溶けていった。,time=2
+# ==================== 1章1節1項: 終了 ====================
+Ev_1_1_1End,FadeOut,,,time=2; color=white
+# ==================== ルート分岐 ====================
+,Branch,,,flag=Nagi_Route; jumpTo=Ev_1_2_1Nagi_Start
+,Branch,,,flag=Mizuki_Route; jumpTo=Ev_1_2_1Mizuki_Start
+# ==================== 各ルートの開始ラベル（未実装） ====================
+Ev_1_2_1Nagi_Start,End,,,
+Ev_1_2_1Mizuki_Start,End,,,

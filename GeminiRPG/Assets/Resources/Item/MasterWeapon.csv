@@ -1,0 +1,50 @@
+ID,Name,WeaponType,PhysicalAttr,Attack,Elements,RaceBonus,AilmentGrant,AilmentRate,AgilityMod,MpCost,SpecialEffect,EquipChar,BuyPrice,SellPrice,IsGiftable,GiftTarget,EmpathyValue,Description
+# === 短剣 (1001-1099) === 固有効果：回避無視
+1001,トラベラーナイフ,Dagger,Pierce,7,,,,,,,,All,250,125,FALSE,,,死出の旅路を行く者の身を守るナイフ。
+1002,スティレット,Dagger,Pierce,14,,,,,,,,All,700,350,FALSE,,,細身の刺突剣。静かに急所を貫くための武器。
+1003,キスオブダスク,Dagger,Pierce,20,Dark,,,,,,,All,0,800,FALSE,,,夕闇に紛れ、魂をつらぬく静寂の刃。
+1004,ドーンピアッサー,Dagger,Pierce,20,Light,,,,,,,All,0,800,FALSE,,,暁を裂く光の一撃。闇を貫く短剣。
+1005,銀龍の短剣,Dagger,Pierce,28,Water,,,,,,,All,0,1200,FALSE,,,振るうと雲を呼び、恵みの雨をもたらすと言われる、龍の鱗を思わせる短剣。
+1006,ダガー,Dagger,Pierce,35,,Human;Demon;Spirit;Beast,,,,,,All,0,2000,FALSE,,,はじまりの名もなき短剣。あらゆる魂を貫く力が宿る。
+# === 片手剣 (1101-1199) === 固有効果：会心率UP
+1101,ショートソード,Sword,Slash,10,,,,,,,,All,400,200,FALSE,,,護身用にも使われる、扱いやすい剣。
+1102,灰鉄の剣,Sword,Slash,16,,,,,,,,All,1200,600,FALSE,,,錆びにくいが少し重い剣。
+1103,森番の剣,Sword,Slash,14,,Plant,,,,,,All,0,500,FALSE,,,かつて森を守っていた者が振るった剣。
+1104,フィンブレード,Sword,Slash,18,,Fish,,,,,,All,0,700,FALSE,,,水を切り裂き、泳ぐ者の動きを封じる剣。
+1105,炎水の剣,Sword,Slash,24,Fire;Water,,,,,,,All,0,1000,FALSE,,,炎と水の相反する力を宿す剣。
+1106,虚実の刃,Sword,Slash,32,Light;Dark,,,,,,,All,0,1800,FALSE,,,光と闇を内包する影の剣。持つ者に、絶対的な正義とは何かを問いかける。
+# === 棍 (1201-1299) === 固有効果：混乱付与
+1201,薪,Club,Strike,4,,,Confusion,20,,,,All,0,10,FALSE,,,なぜか振り回したくなるちょうどいい棒。
+1202,ウッドメイス,Club,Strike,15,,,Confusion,25,,,,All,760,380,FALSE,,,硬い木で作られたシンプルな槌。軽量で扱いやすい。
+1203,乙女の鉄槌,Club,Strike,22,,,Confusion,30,,,,All,0,900,FALSE,,,鉄製の頑丈なメイス。重みのある一撃で敵の装甲を打ち砕く。
+1204,岩砕根槌,Club,Strike,30,Earth,,Confusion,35,,,,All,0,1500,FALSE,,,伸びる根が岩をも砕く。木の精霊の力が宿るとされる神秘の槌。
+# === 片手杖 (1301-1399) === 固有効果：全体属性攻撃（MP消費）
+1301,フクロウの杖,Wand,,8,Wind,,,,,3,,All,0,600,FALSE,,,夜の森を見守るフクロウがかたどられた杖。
+1302,墓守の杖,Wand,,10,Earth,,,,,4,,All,0,700,FALSE,,,墓場を荒らすものを退けるための杖。
+1303,湧水の杖,Wand,,12,Water,,,,,4,,All,0,800,FALSE,,,澄み渡る水の流れを宿した杖。振るえば水が湧き出る。
+1304,一角獣の杖,Wand,,14,Light,,,,,5,,All,0,900,FALSE,,,一角獣の角を用いた杖。穢れを祓い、癒しの力を高める。
+1305,業火の杖,Wand,,16,Fire,,,,,5,,All,0,1000,FALSE,,,罪を焼き滅ぼすための苛烈な炎を放つ杖。
+1306,忘却の杖,Wand,,18,Dark,,,,,6,,All,0,1100,FALSE,,,すべての記憶を闇の彼方へ葬り去る杖。
+# === 槍 (1401-1499) === 固有効果：先制攻撃
+1401,パルチザン,Spear,Pierce,26,,,,,,,,All,1800,900,FALSE,,,広い刃を持つ戦槍。実戦向けの武器。
+1402,ファフニールスピア,Spear,Pierce,32,,Dragon,,,,,,All,0,1400,FALSE,,,伝説の竜殺しの槍。その刃は龍の鱗すら貫く。
+1403,イグニスランス,Spear,Pierce,30,Fire,,,,,,,All,0,1300,FALSE,,,灼熱の炎を宿した魔槍。突き刺した瞬間、業火が燃え広がる。
+1404,ナイトフォール,Spear,Pierce,28,Dark,,Blind,40,,,,All,0,1200,FALSE,,,貫かれた者は、二度と光を見ることはない。
+1405,逆鱗の銛,Spear,Pierce,34,,Fish;Dragon,,,,,,All,0,1600,FALSE,,,竜や巨大魚の逆鱗を狙うために鍛えられた銛槍。
+1406,ギガアステラ,Spear,Pierce,40,Light,,,,,,,All,0,2200,FALSE,,,古の伝承に語られる、戦女神三姉妹の長女ガラテアの槍。星の輝きを放つ。
+# === 両手剣 (1501-1599) === 固有効果：ひるみ付与、敏捷性微減
+1501,クレイモア,GreatSword,Slash,30,,,Flinch,30,-5,,,All,2400,1200,FALSE,,,両手で振るう大型の剣。圧倒的な破壊力を誇る。
+1502,ヴィクティム,GreatSword,Slash,38,Earth;Dark,,Flinch,35,-6,,,All,0,1800,FALSE,,,血を喰らう呪われた大剣。振るうたびに命が削れる。
+1503,テラグラディア,GreatSword,Slash,42,Earth,,Flinch,40,-5,,,All,0,2000,FALSE,,,古の伝承に語られる、戦女神三姉妹の次女セレナの大剣。大地の力を宿す。
+1504,クロガネ,GreatSword,Slash,36,,Human,Flinch,35,-4,,,All,0,1600,FALSE,,,黒鉄で鍛えられた刀。重厚ながら鋭い斬れ味を持つ。
+1505,むらさめ,GreatSword,Slash,40,Water,Human,Flinch,35,-5,,,All,0,1900,FALSE,,,人を斬れば刀身に帯びた水気が血を洗い流すと言われる妖刀。
+# === 大槌 (1601-1699) === 固有効果：防御無視、敏捷性減少
+1601,ウォーハンマー,Hammer,Strike,28,,,,,-8,,,All,3600,1800,FALSE,,,重厚な戦鎚。一撃で鎧ごと叩き潰す破壊力を誇る。
+1602,コロッサル,Hammer,Strike,38,Earth,,,,-10,,,All,0,2200,FALSE,,,超巨大な武器。その一撃は地を揺るがすほどの威力を持つ。
+1603,アースブライト,Hammer,Strike,42,Earth;Light,,,,-8,,,All,0,2500,FALSE,,,大地を光と共に穿つ大槌。星のような輝きを放つ。
+1604,ペタンコハンマー,Hammer,Strike,45,Dark,,,,-10,,,All,0,2800,FALSE,,,古の伝承に語られる、戦女神三姉妹の末妹メメリアの大槌。敵をペタンコにする。
+# === 両手杖 (1701-1799) === 固有効果：全体属性攻撃（MP消費）
+1701,ネメシス,Staff,,35,Light;Dark,Human;Demon,,,8,,All,0,2500,FALSE,,,古の神話に語られる復讐の女神の名を持つ杖。神の裁きを下し、悪を罰するという。
+1702,カタクリズム,Staff,,40,Fire;Wind;Earth,Dragon;Spirit,,,10,,All,0,3000,FALSE,,,大災厄の名を持つ両手杖。振るえば天地が乱れる。
+1703,ヘカトンケイルの手,Staff,,38,Fire;Water;Wind;Earth,,,,9,,All,0,2800,FALSE,,,百の呪術が交錯する混沌の大杖。
+1704,ララバイオブメイデン,Staff,,32,Water;Dark,,Sleep,50,,8,,All,0,2200,FALSE,,,深い眠りをもたらす杖。暗い水底で安らぐような、束の間の忘却を与える。

@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 65188f8f3843840c3b2010b6469e695f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - mainText: {instanceID: 0}
+  - mainTextCanvasGroup: {instanceID: 0}
+  - choiceButtonPrefab: {instanceID: 0}
+  - canvasTransform: {instanceID: 0}
+  - fadeImage: {instanceID: 0}
+  - speakerText: {instanceID: 0}
+  - speakerPanel: {instanceID: 0}
+  - characterImageLeft: {instanceID: 0}
+  - characterImageCenter: {instanceID: 0}
+  - characterImageRight: {instanceID: 0}
+  - backgroundImage: {instanceID: 0}
+  - scenarioCSV: {instanceID: 0}
+  - inputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

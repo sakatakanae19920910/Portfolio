@@ -1,0 +1,87 @@
+スキルID,並び順,習得キャラ,習得レベル,名称,MP,説明,対象範囲,命中率,効果量,乱数幅,対象能力,属性,状態,感情,特殊効果,パラメータ
+SkillID,Order,OwnerID,LearnLevel,SkillName,MpCost,Description,TargetScope,HitRate,Power,Variance,TargetParam,Attribute,Condition,Emotion,EffectType,EffectParams
+### ナギ専用魔法,,,,,,,,,,,,,,,,
+5001,1,Nagi,1,ルクス,4,【攻撃 光 単体小】煌めく光の矢が敵を静かに射抜く。,OneEnemy,95,30,10,HP,Light,,,,
+5002,2,Nagi,8,ノーヴァ,10,【攻撃 光 単体中】凝縮した光が敵の身を焼き焦がす。,OneEnemy,95,70,10,HP,Light,,,,
+5003,3,Nagi,20,ソルフィア,22,【攻撃 光 単体大】眩き光の奔流が敵を撃ち砕く。,OneEnemy,95,140,10,HP,Light,,,,
+5004,4,Nagi,12,フローレ,8,【攻撃 光 全体小】降り注ぐ光華が敵全てを包み込む。,AllEnemies,95,25,10,HP,Light,,,,
+5005,5,Nagi,28,イルミナード,35,【攻撃 光 全体大】天より降る聖なる輝きが影を灼く。,AllEnemies,95,110,10,HP,Light,,,,
+5006,6,Nagi,3,ビネア,4,【攻撃 水 単体小】研ぎ澄まされた水刃が敵を斬り裂く。,OneEnemy,95,30,10,HP,Water,,,,
+5007,7,Nagi,10,ミレナ,10,【攻撃 水 単体中】轟く水の奔流が敵を打ち据える。,OneEnemy,95,70,10,HP,Water,,,,
+5008,8,Nagi,22,フルネリム,22,【攻撃 水 単体大】天を衝く水柱が敵を貫き砕く。,OneEnemy,95,140,10,HP,Water,,,,
+5009,9,Nagi,14,リゼリアス,8,【攻撃 水 全体小】踊る水流が敵全てを洗い流す。,AllEnemies,95,25,10,HP,Water,,,,
+5010,10,Nagi,30,デルフォーネ,35,【攻撃 水 全体大】荒れ狂う激流が敵全てを呑み込む。,AllEnemies,95,110,10,HP,Water,,,,
+5011,11,Nagi,5,アクアス,6,【HP小回復 単体】清らかな水が傷ついた身を癒す。,OneAlly,100,40,10,HP,,,,Heal,
+5012,12,Nagi,16,アクエリア,14,【HP小回復 全体】恵みの水が仲間全ての傷を包む。,AllAllies,100,30,10,HP,,,,Heal,
+5013,13,Nagi,18,スイレンシア,20,【戦闘不能・HP小回復 単体】命の水が消えかけた魂を呼び戻す。,OneDeadAlly,100,30,10,HP,,Incapacitated,,Revive,
+5014,14,Nagi,7,セリオン,5,【攻撃上昇 単体】光が集い、味方単体の刃に聖なる力を宿す。,OneAlly,100,25,0,Attack,,,,Buff,Duration:5
+5015,15,Nagi,15,イリアス,5,【魔力上昇 単体】暁の光が味方単体の魔力を増幅させる。,OneAlly,100,25,0,MagicPower,,,,Buff,Duration:5
+5016,16,Nagi,35,ネレイア・グランツ,50,【攻撃 水・光 全体】激流と閃光が一斉に襲いかかる。,AllEnemies,95,130,10,HP,Water;Light,,,,
+5017,17,Nagi,Event,流転の記憶,0,【攻撃 単体】取り戻した真実の記憶が愛する人の心を揺さぶる。使用後1ターン防御・抗魔力半減。,OneEnemy,100,999,0,HP,,,,EmpathyDamage,SelfDebuff:Defense;MagicDefense|Duration:1|BossOnly:true
+### ミズキ専用魔法,,,,,,,,,,,,,,,,
+6001,21,Mizuki,1,ノクス,4,【攻撃 闇 単体小】静寂に潜む棘が敵の身を捉える。,OneEnemy,95,30,10,HP,Dark,,,,
+6002,22,Mizuki,8,ダールネ,10,【攻撃 闇 単体中】深淵の重力が敵を底なしへ誘う。,OneEnemy,95,70,10,HP,Dark,,,,
+6003,23,Mizuki,20,ノクティルカ,22,【攻撃 闇 単体大】月影の刃が敵を静かに断ち切る。,OneEnemy,95,140,10,HP,Dark,,,,
+6004,24,Mizuki,12,ヴェルグ,8,【攻撃 闇 全体小】夜の帳が降り敵全ての光を奪う。,AllEnemies,95,25,10,HP,Dark,,,,
+6005,25,Mizuki,28,ディザスター,35,【攻撃 闘 全体大】星なき夜空が敵全てを闇に沈める。,AllEnemies,95,110,10,HP,Dark,,,,
+6006,26,Mizuki,3,ビネア,4,【攻撃 水 単体小】研ぎ澄まされた水刃が敵を斬り裂く。,OneEnemy,95,30,10,HP,Water,,,,
+6007,27,Mizuki,10,ミレナ,10,【攻撃 水 単体中】轟く水の奔流が敵を打ち据える。,OneEnemy,95,70,10,HP,Water,,,,
+6008,28,Mizuki,22,フルネリム,22,【攻撃 水 単体大】天を衝く水柱が敵を貫き砕く。,OneEnemy,95,140,10,HP,Water,,,,
+6009,29,Mizuki,14,リゼリアス,8,【攻撃 水 全体小】踊る水流が敵全てを洗い流す。,AllEnemies,95,25,10,HP,Water,,,,
+6010,30,Mizuki,30,デルフォーネ,35,【攻撃 水 全体大】荒れ狂う激流が敵全てを呑み込む。,AllEnemies,95,110,10,HP,Water,,,,
+6011,31,Mizuki,5,アクアス,6,【HP小回復 単体】清らかな水が傷ついた身を癒す。,OneAlly,100,40,10,HP,,,,Heal,
+6012,32,Mizuki,16,アクエリア,14,【HP小回復 全体】恵みの水が仲間全ての傷を包む。,AllAllies,100,30,10,HP,,,,Heal,
+6013,33,Mizuki,18,スイレンシア,20,【戦闘不能・HP小回復 単体】命の水が消えかけた魂を呼び戻す。,OneDeadAlly,100,30,10,HP,,Incapacitated,,Revive,
+6014,34,Mizuki,7,ザルム,5,【攻撃低下 単体】影が絡みつき、相手の力を霧散させる。,OneEnemy,90,25,0,Attack,,,,Debuff,Duration:5
+6015,35,Mizuki,15,ネブラ,5,【魔力低下 単体】相手の内に宿る魔力の輝きに、霧をかける。,OneEnemy,90,25,0,MagicPower,,,,Debuff,Duration:5
+6016,36,Mizuki,35,ヴァーン・フルーヴ,50,【攻撃 水・闇 全体】深海の潮流が、全ての光を奪い去る。,AllEnemies,95,130,10,HP,Water;Dark,,,,
+6017,37,Mizuki,Event,流転の記憶,0,【攻撃 単体】取り戻した真実の記憶が愛する人の心を揺さぶる。使用後1ターン防御・抗魔力半減。,OneEnemy,100,999,0,HP,,,,EmpathyDamage,SelfDebuff:Defense;MagicDefense|Duration:1|BossOnly:true
+### ペチ専用スキル,,,,,,,,,,,,,,,,
+7001,41,Pechi,1,ねこばば,3,【盗み 単体】敵が持っているアイテムを掠め取る。,OneEnemy,70,0,0,,,,,Steal,SuccessRate:70
+7002,42,Pechi,3,毛づくろい,4,【HP回復 自身】毛づくろいをして自分の体力を回復。,Self,100,50,10,HP,,,,Heal,
+7003,43,Pechi,1,ねこパンチ,2,【攻撃 打 単体】敵をひっぱたく。ひるませることがある。,OneEnemy,90,25,15,HP,Strike,Flinch,,DamageWithAilment,AilmentRate:30
+7004,44,Pechi,6,つめとぎ,5,【攻撃 斬 単体】敵で爪を研ぐ。ダメージを与え、攻撃力も上がる。,OneEnemy,95,30,10,HP,Slash,,,DamageWithSelfBuff,BuffStat:Attack|BuffRate:15|Duration:3
+7005,45,Pechi,9,とびかかる,6,【攻撃 刺 単体】すばやく敵に飛びかかり、噛み付く。稀に恐怖を付与。,OneEnemy,95,40,10,HP,Pierce,,Fear,DamageWithAilment,AilmentRate:15
+7006,46,Pechi,4,にゃんダッシュ,3,【敏捷上昇 自身】右に左に素早く動くことで身軽になる。,Self,100,30,0,Agility,,,,Buff,Duration:5
+7007,47,Pechi,12,挑発ステップ,4,【恐怖付与・狙われ率上昇 自身】敵を挑発して狙われることで怖くなる。,Self,100,50,0,TargetRate,,,Fear,Provoke,SelfFear:true|Duration:3
+7008,48,Pechi,15,豹変,8,【変身 自身】野生を解放し、黒豹の姿に変化する。4ターン継続。,Self,100,0,0,,,,,Transform,FormID:BlackPanther|Duration:4
+7009,49,Pechi,18,黒の咆哮,6,【恐怖付与 全体】恐ろしい声を上げて敵全体に恐怖を付与する。,AllEnemies,80,0,0,,,,Fear,,
+7010,50,Pechi,20,瞬爪,7,【攻撃 斬 単体】素早く敵を切り裂く。素早さが高いほど威力が上がる。,OneEnemy,95,40,10,HP,Slash,,,ScaledDamage,ScaleStat:Agility|Ratio:0.5
+7011,51,Pechi,25,ビーストラッシュ,12,【攻撃 斬 全体】敵全体にランダムで3～6回攻撃する。,AllRandomEnemies,85,20,20,HP,Slash,,,MultiHit,MinHits:3|MaxHits:6
+7012,52,Pechi,22,シャドウファング,8,【攻撃 刺 単体】敵を噛み砕く。会心率が高い。,OneEnemy,95,55,10,HP,Pierce,,,HighCritical,CritRate:25
+7013,53,Pechi,28,ワイルドクラッシュ,10,【攻撃 打 単体】相手を叩きつけて攻撃。転倒させることがある。,OneEnemy,90,70,15,HP,Strike,Knockdown,,DamageWithAilment,AilmentRate:40
+### カグヤ専用魔法,,,,,,,,,,,,,,,,
+8001,56,Kaguya,1,フランメ,4,【攻撃 炎 単体小】揺らめく小さな炎が敵を焦がす。,OneEnemy,95,30,10,HP,Fire,,,,
+8002,57,Kaguya,8,ブランド,10,【攻撃 炎 単体中】紅蓮の焔が敵を包み焼き尽くす。,OneEnemy,95,70,10,HP,Fire,,,,
+8003,58,Kaguya,20,アッシェンファル,22,【攻撃 炎 単体大】灼熱の劫火が全てを灰燼に帰す。,OneEnemy,95,140,10,HP,Fire,,,,
+8004,59,Kaguya,12,ヘレンリット,8,【攻撃 炎 全体小】昏く煌めく火花が敵全体を照らし焼く。,AllEnemies,95,25,10,HP,Fire,,,,
+8005,60,Kaguya,28,ゼングシュラーク,35,【攻撃 炎 全体大】業火の奔流が敵全てを焼き払う。,AllEnemies,95,110,10,HP,Fire,,,,
+8006,61,Kaguya,5,ギフト,4,【毒付与 単体】毒の紫煙が敵の身を静かに蝕む。,OneEnemy,80,0,0,,,Poison,,,
+8007,62,Kaguya,9,レーエム,6,【麻痺付与 単体】稲妻が身を貫き麻痺させて自由を奪う。,OneEnemy,75,0,0,,,Paralysis,,,
+8008,63,Kaguya,13,シュラーフ,6,【睡眠付与 単体】安らぎの闇が意識を深淵へ誘い眠らせる。,OneEnemy,70,0,0,,,Sleep,,,
+8009,64,Kaguya,16,ドゥンケル,5,【暗闘付与 単体】漆黒の帳が光を奪い去り暗闇へ落とす。,OneEnemy,85,0,0,,,Blind,,,
+8010,65,Kaguya,19,ヴァーン,7,【混乱付与 単体】幻惑の霧が心を迷わせ混乱させる。,OneEnemy,65,0,0,,,Confusion,,,
+8011,66,Kaguya,24,ラゼライ,10,【暴走付与 単体】狂気の囁きが理性を打ち砕き暴走に陥らせる。,OneEnemy,60,0,0,,,Berserk,,,
+8012,67,Kaguya,22,フルーフ,8,【呪い付与 単体】憎い相手の魂を蝕む呪いの言霊を放つ。,OneEnemy,70,0,0,,,Curse,,,
+8013,68,Kaguya,7,ツェールング,5,【MP吸収 単体】魔力の流れを奪い我が糧とする。,OneEnemy,85,20,10,MP,,,,Drain,DrainType:MP
+8014,69,Kaguya,11,ブルートラウブ,8,【HP吸収 単体】生命の雫を啜り力に変える。,OneEnemy,90,50,10,HP,,,,Drain,DrainType:HP|DrainRate:50
+8015,70,Kaguya,3,エアヴァーヘン,4,【攻撃上昇 自身】闘志の炎が己の刃を研ぎ澄まし、攻撃力を上げる。,Self,100,30,0,Attack,,,,Buff,Duration:5
+8016,71,Kaguya,14,ブレッヒ,5,【防御低下 単体】鋼の守りを脆き銅へと落とし、防御力を下げる。,OneEnemy,90,25,0,Defense,,,,Debuff,Duration:5
+8017,72,Kaguya,17,トリューベン,5,【抗魔低下 単体】魔法の盾を霧のように薄れさせ、抗魔力を下げる。,OneEnemy,90,25,0,MagicDefense,,,,Debuff,Duration:5
+8018,73,Kaguya,10,ラーム,5,【敏捷低下 単体】重い鎖を四肢に絡ませ動きを封じ、敏捷性を下げる。,OneEnemy,90,25,0,Agility,,,,Debuff,Duration:5
+### ハヤテ専用魔法,,,,,,,,,,,,,,,,
+9001,77,Hayate,1,そよ風のさざめき,4,【HP小回復 単体】優しい風が傷を撫で、癒しを運ぶ。,OneAlly,100,40,10,HP,,,,Heal,
+9002,78,Hayate,10,西風の祈り,12,【HP大回復 単体】慈愛の風が深き傷をも包み込む。,OneAlly,100,100,10,HP,,,,Heal,
+9003,79,Hayate,6,青嵐の癒し,10,【HP小回復 全体】清らかな風が皆の痛みを和らげる。,AllAllies,100,30,10,HP,,,,Heal,
+9004,80,Hayate,20,翠風,28,【HP大回復 全体】生命の風が仲間全てを深く癒す。,AllAllies,100,80,10,HP,,,,Heal,
+9005,81,Hayate,8,生命の息吹,15,【戦闘不能・HP小回復 単体】魂を繋ぎ止める風が意識を取り戻す。,OneDeadAlly,100,30,10,HP,,Incapacitated,,Revive,
+9006,82,Hayate,18,還風,25,【戦闘不能・HP大回復 単体】蘇りの風が消えゆく魂を呼び戻す。,OneDeadAlly,100,80,10,HP,,Incapacitated,,Revive,
+9007,83,Hayate,30,瑞風,45,【戦闘不能・HP回復 全体】祝福の風が全ての魂に再び光を灯す。,AllDeadAllies,100,50,10,HP,,Incapacitated,,Revive,
+9008,84,Hayate,4,瘴気払いの風,3,【毒・麻痺治療 単体】清浄なる風が毒と痺れを吹き払う。,OneAlly,100,0,0,,,Poison;DeadlyPoison;Paralysis,,CureAilment,
+9009,85,Hayate,9,吹雲の風,3,【睡眠・暗闇治療 単体】目覚めの風が眠りと闇を払い除く。,OneAlly,100,0,0,,,Sleep;Blind,,CureAilment,
+9010,86,Hayate,13,澄風の調べ,4,【混乱・暴走治療 単体】澄んだ風の音色が乱れた精神を鎮める。,OneAlly,100,0,0,,,Confusion;Berserk,,CureAilment,
+9011,87,Hayate,16,風解き,5,【呪い治療 単体】聖なる風が呪縛の鎖を解き放つ。,OneAlly,100,0,0,,,Curse,,CureAilment,
+9012,88,Hayate,22,四季風の加護,12,【耐性付与 炎・水・風・地 単体】時を巡る風が四つの力から身を護る。,OneAlly,100,0,0,,,,,AddResist,Elements:Fire;Water;Wind;Earth|Duration:5
+9013,89,Hayate,5,玉風の守り,6,【防御上昇 全体】堅き風の壁が仲間を守護する。,AllAllies,100,20,0,Defense,,,,Buff,Duration:5
+9014,90,Hayate,11,花風のささやき,6,【抗魔上昇 全体】柔らかな風が魔の力を退ける盾となる。,AllAllies,100,20,0,MagicDefense,,,,Buff,Duration:5
+9015,91,Hayate,14,追い風の導き,6,【敏捷上昇 全体】疾風が仲間の足取りを軽やかにする。,AllAllies,100,20,0,Agility,,,,Buff,Duration:5

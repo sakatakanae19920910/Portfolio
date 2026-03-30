@@ -1,0 +1,94 @@
+ID,Name,ArmorType,Defense,MagicDefense,ElementResist,AilmentResist,AilmentResistRate,AgilityMod,SpecialEffect,EquipChar,BuyPrice,SellPrice,IsGiftable,GiftTarget,EmpathyValue,Description
+# === 盾 (2001-2099) ===
+2001,鍋のフタ,Shield,3,0,Fire,,,,,All,0,15,FALSE,,,台所にあった鍋のフタ。意外と頑丈。
+2002,バックラー,Shield,7,0,,,,,,All,200,100,FALSE,,,軽量で扱いやすい盾。
+2003,カイトシールド,Shield,11,0,Pierce,,,,,All,960,480,FALSE,,,突進を受け流す設計が特徴の騎士盾。
+2004,エボニーシールド,Shield,14,0,Pierce,,,,,All,0,600,FALSE,,,漆黒の板で構成された盾。守りに徹する設計。
+2005,オラクルガード,Shield,12,5,Pierce,,,,MagicDefUp,All,0,700,FALSE,,,預言者の名を冠する盾。
+2006,真銀の盾,Shield,16,0,Pierce,,,,,All,0,800,FALSE,,,聖なる銀が鍛えられた、絶えぬ光を宿す防壁。
+2007,花紋の盾,Shield,14,0,Pierce;Water;Earth,,,,,All,0,750,FALSE,,,繊細な花の紋様が刻まれた、美しくも頼れる盾。
+2008,コーラルシールド,Shield,13,0,Pierce;Water,,,,,All,0,650,FALSE,,,サンゴの輝きが刻まれた優美な盾。
+2009,スペクトルガード,Shield,15,0,Pierce;Fire;Water;Wind,,,,,All,0,900,FALSE,,,虹の加護を宿す盾。
+2010,アイシーバリア,Shield,17,0,Pierce,,,,,All,0,850,FALSE,,,氷のように硬く、静かに敵を拒む盾。
+2011,柳美盾,Shield,12,0,Pierce;Wind,,,,,All,0,600,FALSE,,,風にたなびく柳のごとく、しなやかに受け流す盾。
+2012,貝殻の夢,Shield,10,3,Pierce,,,,MpRegen,All,0,700,FALSE,,,貝殻を模した、滑らかな曲線を描く盾。
+2013,ハーフムーン,Shield,14,0,Pierce;Dark,,,,,All,0,750,FALSE,,,半月を模して鍛えられた美しい盾。
+2014,落涙の盾,Shield,11,6,Pierce,,,,MagicDefUp,All,0,800,FALSE,,,涙型の小盾。静かな意志を宿す。
+2015,ネヴァーモア,Shield,18,0,Pierce;Fire;Dark,,,,,All,0,1000,FALSE,,,絶望の淵で鍛えられた漆黒の盾。
+2016,エヴァーモア,Shield,18,0,Pierce;Water;Light,,,,,All,0,1000,FALSE,,,輝きを宿した純白の盾。
+2017,闘者の盾,Shield,20,0,Pierce;Strike;Water;Dark,,,,,All,0,1200,FALSE,,,打ちのめされても立ち向かい、闘う者を守るための盾。
+2018,ねこみみシールド,Shield,10,0,Pierce,,,,EvasionUp,All,0,500,FALSE,,,にゃんとも頼れる、お耳つきの盾。
+# === 軽装 (2101-2199) ===
+2101,旅人の服,LightArmor,10,0,Strike,,,,,All,0,0,FALSE,,,新たなる旅に出た者が身にまとう衣服。
+2102,ハンタージャケット,LightArmor,18,0,Strike,,,,,All,1700,850,FALSE,,,狩人の装いを模した軽装防具。
+2103,レザーアーマー,LightArmor,25,0,Strike,,,,,All,3500,1750,FALSE,,,革で作られた、軽量な防具。
+2104,忍び装束,LightArmor,22,0,Strike;Dark,,,,EvasionUp,All,0,1200,FALSE,,,影に溶け込むための漆黒の装束。音もなく敵に接近できる。
+2105,ナイトフォレスト,LightArmor,24,0,Strike;Earth;Dark,,,,,All,0,1300,FALSE,,,夜の森の静寂を纏う衣。月明かりの下で真価を発揮する。
+2106,トワイライトシャドウ,LightArmor,23,0,Strike;Light,,,,,All,0,1250,FALSE,,,黄昏の影を織り込んだ神秘の衣。光と闇の狭間で身を守る。
+2107,薫風の衣,LightArmor,20,0,Strike;Wind,,,,,All,0,1000,FALSE,,,風薫る季節の優しさを宿した衣。身につける者に爽やかな守りを与える。
+2108,ウィンディリーフ,LightArmor,21,0,Strike;Wind,,,,,All,0,1100,FALSE,,,風に舞う葉のように軽やかな衣。身のこなしを妨げず、自在に動ける。
+2109,春霞,LightArmor,22,0,Strike;Water;Wind,,,,,All,0,1200,FALSE,,,春の霞のように柔らかく、優しく身を包む衣。穏やかな守りを与える。
+2110,星追いの衣,LightArmor,28,0,Strike;Light;Dark,,,,,All,0,1800,FALSE,,,旅人の服の真の姿。星を追い求める者のための衣。夜の闇の中でも光はある。
+# === 重装 (2201-2299) ===
+2201,チェインメイル,HeavyArmor,36,0,Slash,,,-5,,All,2300,1150,FALSE,,,金属の鎖を編んだ標準的な鎧。
+2202,アイアンブレスト,HeavyArmor,42,0,Slash,,,-7,,All,4650,2325,FALSE,,,鉄製の胸当て。防御に優れる重装。
+2203,ダークメイル,HeavyArmor,40,0,Slash;Dark,,,-6,,All,0,2000,FALSE,,,闇色に染められた鎧。光を吸い込み、装着者の姿を闇に溶け込ませる。
+2204,ブラックソイル,HeavyArmor,44,0,Slash;Earth,,,-7,,All,0,2200,FALSE,,,黒き大地の力を宿した鎧。決して倒れぬ不屈の守りを与える。
+2205,朽葉の鎧,HeavyArmor,38,0,Slash;Wind;Earth,,,-5,,All,0,1800,FALSE,,,落ち葉を纏ったかのような、自然に溶け込む鎧。時の流れを受け入れ、静かに身を守る。
+2206,ヒストリアメイル,HeavyArmor,48,0,Pierce;Slash;Strike,,,-8,,All,0,2800,FALSE,,,歴史を刻んだ古の鎧。過去の英雄たちの記憶が宿り、装着者を守護する。
+2207,プラチナムグレイ,HeavyArmor,46,0,Slash;Light,,,-6,,All,0,2500,FALSE,,,白金色に輝く高貴な鎧。気高き灰色の輝きが、装着者に威厳と力を与える。
+2208,ラヴィアンローズ,HeavyArmor,45,0,Slash;Fire,,,-6,,All,0,2400,FALSE,,,薔薇の紋章を刻んだ優美な鎧。美しさと強さを兼ね備え、装着者を華麗に守る。
+2209,マスターオブフェイト,HeavyArmor,50,0,Slash,,,-8,CritUp,All,0,3000,FALSE,,,運命を統べる者の鎧。装着者に運命を切り開く力と、揺るぎない意志を与える。
+2210,ムーンレスナイト,HeavyArmor,48,0,Slash;Dark,,,-7,,All,0,2700,FALSE,,,月なき夜の静寂を纏う騎士の鎧。
+2211,メルカバ,HeavyArmor,52,0,Slash;Fire;Light,,,-8,,All,0,3500,FALSE,,,魂を運ぶ戦車の名を冠した聖なる鎧。あらゆる災厄から守護する。
+# === 霊装 (2301-2399) ===
+2301,ローブ,Robe,0,10,,,,,,All,1600,800,FALSE,,,身にまとうと魔法への耐性が少しつく布製の衣。
+2302,スタークローク,Robe,0,14,,,,,,All,0,1000,FALSE,,,星の名を冠した、軽やかな外套。
+2303,フォグローブ,Robe,0,14,,,,,,All,0,1000,FALSE,,,霧の気配をまとう、不思議な外套。
+2304,一夜草のローブ,Robe,0,16,,,,,,All,0,1200,FALSE,,,一夜限りの花を織り込んだ霊装。
+2305,ミューズローブ,Robe,0,18,,,,,MagicPowerUp,All,0,1400,FALSE,,,芸術の女神の加護を宿したローブ。創造の力が魔力を高め、美しき魔法を紡ぐ。
+2306,調和の衣,Robe,0,18,,,,,,All,0,1400,FALSE,,,万物の調和を織り込んだ霊装。自然との調和が魔力を安定させ、優しい守りを与える。
+2307,イブニングブリーズ,Robe,0,16,,,,,,All,0,1200,FALSE,,,夕暮れの風を纏った霊装。そよ風のように優しく、心を癒す魔力を宿す。
+2308,パウダースノー,Robe,0,18,,,,,,All,0,1400,FALSE,,,粉雪のように軽やかな霊装。純白の輝きが魔力を清め、静謐な守りを与える。
+2309,ハイドレンジア,Robe,0,16,,,All,50,,,All,0,1500,FALSE,,,紫陽花の彩りを織り込んだ霊装。移ろいゆく色彩が多様な守りを与える。
+2310,ノーザンライト,Robe,0,22,,,,,,All,0,2000,FALSE,,,オーロラの輝きを纏った霊装。神秘の光が奇跡の守りを与える。
+2311,銀河の衣,Robe,0,24,,,InstantDeath,100,,InstantDeathGuard,All,0,2500,FALSE,,,天の川の星を織り込んだ霊装。生と死の狭間を進む者を守る。
+# === 補助防具 (2401-2499) ===
+# マント系（回避率上昇）
+2401,古びたマント,SubArmor,2,0,,,,,EvasionUp,All,0,30,FALSE,,,家にあったマント。だいぶ年季が入っている。
+2402,宵待月のマント,SubArmor,4,0,,,,,EvasionUp,All,0,400,FALSE,,,宵に浮かぶ月をまとうような、やわらかな外套。
+2403,透明マント,SubArmor,0,0,,,,,EvasionUpLarge,All,0,800,FALSE,,,姿を隠す布。高い回避率を誇るが、防御面は半減する。
+2404,夜半のショール,SubArmor,3,0,,Sleep,100,,EvasionUp,All,0,500,FALSE,,,夜のとばりのように静かな、軽やかな布。
+# グローブ系（攻撃力上昇）
+2411,戦忍の手甲,SubArmor,3,0,,,,,CritUp;AttackUp,All,0,600,FALSE,,,戦場を駆ける孤独な忍びのための防具。
+2412,餓狼の籠手,SubArmor,4,0,,,,,AttackUp,All,0,500,FALSE,,,飢えた獣の本能を呼び覚ます籠手。
+2413,手編みの手袋,SubArmor,2,0,Water;Wind,,,,AttackUp,All,0,300,FALSE,,,誰かが編んだ手袋。あたたかい。
+# 兜系（魔力上昇）
+2421,ミスティックハット,SubArmor,2,3,,,,,MaxMpUp;MagicPowerUp,All,0,600,FALSE,,,神秘の力を帯びた、不思議な帽子。
+2422,獅子面の兜,SubArmor,5,0,,Fear,100,,,All,0,700,FALSE,,,獅子を模した兜。湧き出る勇気が恐怖を打ち払う。
+2423,イバラの冠,SubArmor,3,5,,,,,MagicDefUp;MagicPowerUp,All,0,650,FALSE,,,荊棘で編まれた冠。痛みを受け入れることで、魔を遮る力を得る。
+2424,渡り鳥の羽根帽子,SubArmor,2,0,,Knockdown,100,,MagicPowerUp,All,0,500,FALSE,,,今はもう帰らぬ群れが落とした羽根を飾った軽帽子。
+# ブーツ系（素早さ上昇）
+2431,編み上げブーツ,SubArmor,3,0,,,,,AgilityUp,All,0,400,FALSE,,,しっかりと足を守る革の編み上げ靴。
+2432,スプリントシューズ,SubArmor,2,0,,,,,AgilityUp,All,0,500,FALSE,,,疾走のために設計された軽量な靴。
+2433,風駆けのブーツ,SubArmor,3,0,,,,,AgilityUp;EvasionUp,All,0,700,FALSE,,,軽く柔らかな素材で作られた俊足用の靴。
+2434,抜け忍の脚絆,SubArmor,2,0,,,,,AgilityUp,All,0,600,FALSE,,,裏切り者の逃亡者のために仕立てられた脚絆。
+# === 装飾品 (2501-2599) ===
+2501,紅石のイヤリング,Accessory,0,0,,Curse,100,,DefMagDefMult,Nagi,0,0,FALSE,,,カイリがいつも付けているイヤリングの片割れ。ナギ専用。
+2502,蒼石のイヤリング,Accessory,0,0,,Curse,100,,DefMagDefMult,Mizuki,0,0,FALSE,,,ルイがいつも付けているイヤリングの片割れ。ミズキ専用。
+2503,夜会のネックレス,Accessory,0,0,,Confusion;Flinch,100,,,All,0,800,FALSE,,,優雅さと強さを秘めた夜の首飾り。
+2504,風結びの腕輪,Accessory,0,0,Wind,Poison,100,,,All,0,700,FALSE,,,風の加護を編み込んだ、軽やかな腕輪。
+2505,雪花の首飾り,Accessory,0,0,,Poison;Berserk,100,,,All,0,750,FALSE,,,雪の結晶をかたどった清らかな首飾り。
+2506,翡翠の指輪,Accessory,0,0,,Confusion;Berserk,100,,,All,0,700,FALSE,,,魔を退けるとされる、緑の宝石の指輪。
+2507,瑠璃の涙,Accessory,0,0,,Sleep,100,,,All,0,600,FALSE,,,澄んだ涙のような、瑠璃色の護石。
+2508,月夜のアミュレット,Accessory,0,0,,Sleep;Blind,100,,,All,0,750,FALSE,,,月明かりを封じた、小さな護符。
+2509,ミラージュリング,Accessory,0,0,,Confusion;Knockdown,100,,,All,0,700,FALSE,,,幻のように姿を揺らがせる指輪。
+2510,ねこみみ,Accessory,0,0,,Paralysis;Knockdown,100,,,All,0,500,TRUE,Kairi;Rui,20,ねこのように軽やかで柔軟になれる。
+2511,きらきら星,Accessory,0,0,,,,,ExpUp,All,0,600,TRUE,Kairi;Rui,15,淡く輝くブローチ。小さな光が、あなたの心を照らす。
+2512,暁光のブレスレット,Accessory,0,0,,Fear,90,,,All,0,400,FALSE,,,夜明けの光を宿す、勇気のブレスレット。
+2513,宵闇のアンクレット,Accessory,0,0,,,,,MpCostHalf,All,0,1000,FALSE,,,静かな宵に力を帯びる、魔の足飾り。
+2514,陽炎の護符,Accessory,0,0,Fire,,,,EvasionUp,All,0,800,FALSE,,,揺らめく陽炎を象った、熱と影の護符。
+2515,石の花,Accessory,0,0,,,,,MaxHpUp;MaxMpUp,All,0,1200,FALSE,,,咲くことなき花の形をした鉱石。HPとMPの最大値を上げる。
+2516,白狐の面,Accessory,0,0,,,,,MagicPowerUpLarge,All,0,1500,FALSE,,,神の御使いとされる白狐の面。
+2517,久遠の宝珠,Accessory,0,0,,All,50,,,All,0,2000,FALSE,,,はじまりと終わりを内に秘めた宝珠。
+2518,ガラスの鈴笛,Accessory,0,0,All,All,100,,,All,0,0,FALSE,,,澄んだ音色ですべての魂を導くという透明な笛。あらゆる災厄から身を守る。
