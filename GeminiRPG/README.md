@@ -1,4 +1,4 @@
-# 流転のジェミニ (Ryuten no Gemini)
+# 流転のジェミニ (Ruten no Gemini)
 
 Unity製 2Dターン制RPG。個人開発プロジェクト。
 
