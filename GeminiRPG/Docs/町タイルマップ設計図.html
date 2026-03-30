@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>流転のジェミニ — 町タイルマップ設計図</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;500;700&family=Zen+Maru+Gothic:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+  :root {
+    --bg: #1e1c1a;
+    --surface: #2a2724;
+    --surface-light: #35312d;
+    --border: #3e3a35;
+    --text: #e8e0d4;
+    --text-dim: #9a9080;
+    --text-faint: #6a6258;
+    --grid-line: rgba(255,255,255,0.04);
+    --grid-line-major: rgba(255,255,255,0.08);
+
+    --c-pharmacy: #5b9c6e;
+    --c-weapon: #c0884a;
+    --c-tavern: #9a6a9a;
+    --c-exchange: #6a8d9b;
+    --c-fortune: #bda04a;
+    --c-plaza: #d4bc7a;
+    --c-path: #8a7a5a;
+    --c-wall: #5a524a;
+    --c-tree: #4a6a3a;
+    --c-entry: #e07050;
+
+    --tile: 18px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Zen Maru Gothic', sans-serif;
+    min-height: 100vh;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    color: var(--text);
+  }
+
+  .subtitle {
+    font-size: 12px;
+    color: var(--text-dim);
+    margin-top: 4px;
+    text-align: center;
+  }
+
+  .main-layout {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+  }
+
+  /* ===== GRID MAP ===== */
+  .map-panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    flex-shrink: 0;
+  }
+
+  .map-panel h2 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-dim);
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .map-panel h2 .tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    background: var(--surface-light);
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: var(--text-faint);
+  }
+
+  .grid-wrapper {
+    position: relative;
+    overflow: auto;
+    max-height: 80vh;
+  }
+
+  .grid-container {
+    display: grid;
+    gap: 0;
+    border: 1px solid var(--grid-line-major);
+    position: relative;
+    width: fit-content;
+  }
+
+  .cell {
+    width: var(--tile);
+    height: var(--tile);
+    border-right: 1px solid var(--grid-line);
+    border-bottom: 1px solid var(--grid-line);
+    position: relative;
+    transition: background 0.1s;
+  }
+
+  .cell.major-x { border-right-color: var(--grid-line-major); }
+  .cell.major-y { border-bottom-color: var(--grid-line-major); }
+
+  /* Cell types */
+  .cell.ground { background: rgba(120,105,75,0.15); }
+  .cell.path { background: rgba(138,122,90,0.3); }
+  .cell.path-main { background: rgba(138,122,90,0.4); }
+  .cell.plaza { background: rgba(212,188,122,0.12); border-color: rgba(212,188,122,0.08); }
+  .cell.pharmacy { background: rgba(91,156,110,0.25); }
+  .cell.pharmacy-roof { background: rgba(91,156,110,0.4); }
+  .cell.weapon { background: rgba(192,136,74,0.25); }
+  .cell.weapon-roof { background: rgba(192,136,74,0.4); }
+  .cell.tavern { background: rgba(154,106,154,0.25); }
+  .cell.tavern-roof { background: rgba(154,106,154,0.4); }
+  .cell.exchange { background: rgba(106,141,155,0.25); }
+  .cell.exchange-roof { background: rgba(106,141,155,0.4); }
+  .cell.fortune { background: rgba(189,160,74,0.25); }
+  .cell.fortune-roof { background: rgba(189,160,74,0.4); }
+  .cell.tree { background: rgba(74,106,58,0.35); border-radius: 50%; }
+  .cell.bush { background: rgba(74,106,58,0.2); border-radius: 40%; }
+  .cell.rock { background: rgba(100,92,82,0.3); border-radius: 30%; }
+  .cell.fence { background: rgba(140,120,80,0.25); }
+  .cell.bench { background: rgba(160,130,80,0.3); }
+  .cell.entry { background: rgba(224,112,80,0.3); }
+  .cell.wall { background: rgba(90,82,74,0.35); }
+  .cell.door { background: rgba(180,150,90,0.45); }
+  .cell.water { background: rgba(70,110,140,0.2); }
+
+  /* Hover */
+  .cell:hover { outline: 1px solid rgba(255,255,255,0.3); z-index: 2; }
+
+  /* Labels overlay */
+  .label {
+    position: absolute;
+    font-size: 9px;
+    font-weight: 700;
+    pointer-events: none;
+    white-space: nowrap;
+    letter-spacing: 0.05em;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+    z-index: 5;
+  }
+
+  .label-sub {
+    font-size: 7.5px;
+    font-weight: 400;
+    opacity: 0.7;
+    display: block;
+    margin-top: 1px;
+  }
+
+  /* Axis labels */
+  .axis-label {
+    position: absolute;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 8px;
+    color: var(--text-faint);
+    pointer-events: none;
+  }
+
+  /* ===== SIDE PANEL ===== */
+  .side-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 340px;
+    min-width: 280px;
+  }
+
+  .info-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+
+  .info-card h3 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-dim);
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .spec-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+    font-size: 11px;
+  }
+
+  .spec-label { color: var(--text-dim); }
+
+  .spec-value {
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--text);
+    font-size: 11px;
+  }
+
+  .building-list {
+    list-style: none;
+  }
+
+  .building-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+    font-size: 11px;
+    line-height: 1.6;
+  }
+
+  .building-list li:last-child { border-bottom: none; }
+
+  .b-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+
+  .b-name {
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .b-size {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--text-faint);
+  }
+
+  .b-desc {
+    color: var(--text-dim);
+    font-size: 10.5px;
+  }
+
+  .layer-list {
+    list-style: none;
+  }
+
+  .layer-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 0;
+    font-size: 11px;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+  }
+
+  .layer-list li:last-child { border-bottom: none; }
+
+  .layer-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    background: var(--surface-light);
+    padding: 1px 5px;
+    border-radius: 3px;
+    color: var(--text-faint);
+    flex-shrink: 0;
+  }
+
+  .layer-name { color: var(--text); font-weight: 500; }
+  .layer-desc { color: var(--text-dim); font-size: 10px; }
+
+  .tip-box {
+    background: rgba(91,156,110,0.08);
+    border: 1px solid rgba(91,156,110,0.15);
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 10.5px;
+    line-height: 1.7;
+    color: var(--text-dim);
+  }
+
+  .tip-box strong {
+    color: var(--c-pharmacy);
+    font-weight: 500;
+  }
+
+  .coord-display {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--text-faint);
+    min-height: 16px;
+    margin-top: 4px;
+  }
+
+  @media (max-width: 800px) {
+    :root { --tile: 14px; }
+    .main-layout { flex-direction: column; align-items: center; }
+    .side-panel { max-width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <h1>町タイルマップ設計図</h1>
+  <p class="subtitle">30×35 タイル ─ Unity Tilemap 用グリッドレイアウト</p>
+</div>
+
+<div class="main-layout">
+  <!-- Map Panel -->
+  <div class="map-panel">
+    <h2>マップ全体 <span class="tag">30×35 tiles</span></h2>
+    <div class="coord-display" id="coordDisplay">座標: --</div>
+    <div class="grid-wrapper">
+      <div class="grid-container" id="grid" style="grid-template-columns: repeat(30, var(--tile)); grid-template-rows: repeat(35, var(--tile));">
+      </div>
+    </div>
+  </div>
+
+  <!-- Side Info -->
+  <div class="side-panel">
+    <div class="info-card">
+      <h3>マップ仕様</h3>
+      <div class="spec-row"><span class="spec-label">マップサイズ</span><span class="spec-value">30 × 35 タイル</span></div>
+      <div class="spec-row"><span class="spec-label">タイルサイズ（推奨）</span><span class="spec-value">32px or 48px</span></div>
+      <div class="spec-row"><span class="spec-label">解像度 (32px時)</span><span class="spec-value">960 × 1120 px</span></div>
+      <div class="spec-row"><span class="spec-label">解像度 (48px時)</span><span class="spec-value">1440 × 1680 px</span></div>
+      <div class="spec-row"><span class="spec-label">視点</span><span class="spec-value">トップダウン 2D</span></div>
+      <div class="spec-row"><span class="spec-label">カメラ</span><span class="spec-value">追従 or 固定</span></div>
+    </div>
+
+    <div class="info-card">
+      <h3>施設フットプリント</h3>
+      <ul class="building-list">
+        <li>
+          <div class="b-dot" style="background: var(--c-pharmacy);"></div>
+          <div>
+            <span class="b-name">薬屋（パートナーの家）</span> <span class="b-size">6×7</span><br>
+            <span class="b-desc">2階建て。1F：店舗＋リビング、2F：主人公の部屋＋パートナーの部屋。内部マップは別シーン推奨</span>
+          </div>
+        </li>
+        <li>
+          <div class="b-dot" style="background: var(--c-weapon);"></div>
+          <div>
+            <span class="b-name">武器屋</span> <span class="b-size">8×6</span><br>
+            <span class="b-desc">町で一番大きな建物。広場に面する。内部にNPC5人＋店主＋本棚</span>
+          </div>
+        </li>
+        <li>
+          <div class="b-dot" style="background: var(--c-tavern);"></div>
+          <div>
+            <span class="b-name">酒場</span> <span class="b-size">6×5</span><br>
+            <span class="b-desc">奥まった位置。内部に地下への隠し階段あり</span>
+          </div>
+        </li>
+        <li>
+          <div class="b-dot" style="background: var(--c-exchange);"></div>
+          <div>
+            <span class="b-name">交換屋</span> <span class="b-size">4×4</span><br>
+            <span class="b-desc">小さな店。ミタマ石との交換</span>
+          </div>
+        </li>
+        <li>
+          <div class="b-dot" style="background: var(--c-fortune);"></div>
+          <div>
+            <span class="b-name">占い屋</span> <span class="b-size">3×4</span><br>
+            <span class="b-desc">町の最奥。ひっそりと小さい。探さないと見つからない感を演出</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h3>Unity Tilemap レイヤー構成</h3>
+      <ul class="layer-list">
+        <li><span class="layer-num">0</span><span class="layer-name">Ground</span><span class="layer-desc">— 地面・草・土道</span></li>
+        <li><span class="layer-num">1</span><span class="layer-name">Path</span><span class="layer-desc">— 踏み固められた道</span></li>
+        <li><span class="layer-num">2</span><span class="layer-name">Objects</span><span class="layer-desc">— 岩・ベンチ・柵・樽</span></li>
+        <li><span class="layer-num">3</span><span class="layer-name">Buildings</span><span class="layer-desc">— 建物の壁・屋根</span></li>
+        <li><span class="layer-num">4</span><span class="layer-name">Rooftop</span><span class="layer-desc">— 屋根（進入時に透過）</span></li>
+        <li><span class="layer-num">5</span><span class="layer-name">Collision</span><span class="layer-desc">— 当たり判定（非表示）</span></li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h3>技術メモ</h3>
+      <div class="tip-box">
+        <strong>Tilemap Collider 2D</strong> を Buildings レイヤーに設定し、Composite Collider 2D と組み合わせるとパフォーマンスが良くなります。<br><br>
+        <strong>屋根の透過：</strong>建物に入った時に屋根タイルを非表示にするには、Rooftopレイヤーを別Tilemapにして、Trigger進入時にSpriteRenderer.colorのalphaを下げるのが簡単です。<br><br>
+        <strong>素材探しのヒント：</strong>itch.io で「top-down tileset RPG」で検索すると無料〜安価な素材が多数見つかります。タイルサイズ（16/32/48px）を統一することが重要。
+      </div>
+    </div>
+
+    <div class="info-card">
+      <h3>凡例</h3>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px; font-size: 10.5px;">
+        <div style="display:flex;align-items:center;gap:5px;"><div style="width:12px;height:12px;background:rgba(138,122,90,0.4);border-radius:2px;"></div><span>道（メイン）</span></div>
+        <div style="display:flex;align-items:center;gap:5px;"><div style="width:12px;height:12px;background:rgba(138,122,90,0.25);border-radius:2px;"></div><span>道（脇道）</span></div>
+        <div style="display:flex;align-items:center;gap:5px;"><div style="width:12px;height:12px;background:rgba(212,188,122,0.15);border-radius:2px;"></div><span>広場</span></div>
+        <div style="display:flex;align-items:center;gap:5px;"><div style="width:12px;height:12px;background:rgba(120,105,75,0.2);border-radius:2px;"></div><span>地面</span></div>
+        <div style="display:flex;align-items:center;gap:5px;"><div style="width:12px;height:12px;background:rgba(91,156,110,0.35);border-radius:2px;"></div><span>薬屋</span></div>
+        <div style="display:flex;align-items:center;gap:5px;"><div style="width:12px;height:12px;background:rgba(192,136,74,0.35);border-radius:2px;"></div><span>武器屋</span></div>
+        <div style="display:flex;align-items:center;gap:5px;"><div style="width:12px;height:12px;background:rgba(154,106,154,0.35);border-radius:2px;"></div><span>酒場</span></div>
+        <div style="display:flex;align-items:center;gap:5px;"><div style="width:12px;height:12px;background:rgba(106,141,155,0.35);border-radius:2px;"></div><span>交換屋</span></div>
+        <div style="display:flex;align-items:center;gap:5px;"><div style="width:12px;height:12px;background:rgba(189,160,74,0.35);border-radius:2px;"></div><span>占い屋</span></div>
+        <div style="display:flex;align-items:center;gap:5px;"><div style="width:12px;height:12px;background:rgba(74,106,58,0.4);border-radius:50%;"></div><span>木・草</span></div>
+        <div style="display:flex;align-items:center;gap:5px;"><div style="width:12px;height:12px;background:rgba(100,92,82,0.35);border-radius:30%;"></div><span>岩</span></div>
+        <div style="display:flex;align-items:center;gap:5px;"><div style="width:12px;height:12px;background:rgba(160,130,80,0.35);border-radius:2px;"></div><span>ベンチ・小物</span></div>
+        <div style="display:flex;align-items:center;gap:5px;"><div style="width:12px;height:12px;background:rgba(224,112,80,0.35);border-radius:2px;"></div><span>入口</span></div>
+        <div style="display:flex;align-items:center;gap:5px;"><div style="width:12px;height:12px;background:rgba(180,150,90,0.5);border-radius:2px;"></div><span>ドア</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const W = 30, H = 35;
+
+// Map data: 2D array. Each cell has a type string.
+// Layout concept:
+// - Entry at bottom center
+// - Pharmacy near entry
+// - Plaza in center
+// - Weapon shop left of plaza
+// - Tavern upper right (set back)
+// - Exchange upper left
+// - Fortune teller top center-right (deepest)
+// - Organic paths connecting them
+// - Trees, rocks, bushes scattered at edges
+
+function createMap() {
+  const map = [];
+  for (let y = 0; y < H; y++) {
+    map[y] = [];
+    for (let x = 0; x < W; x++) {
+      map[y][x] = 'ground';
+    }
+  }
+
+  function fill(x0, y0, w, h, type) {
+    for (let dy = 0; dy < h; dy++) {
+      for (let dx = 0; dx < w; dx++) {
+        const nx = x0 + dx, ny = y0 + dy;
+        if (nx >= 0 && nx < W && ny >= 0 && ny < H) {
+          map[ny][nx] = type;
+        }
+      }
+    }
+  }
+
+  function set(x, y, type) {
+    if (x >= 0 && x < W && y >= 0 && y < H) map[y][x] = type;
+  }
+
+  // === MAIN PATH (entry → pharmacy → plaza) ===
+  // Entry area (bottom center)
+  fill(13, 33, 4, 2, 'entry');
+
+  // Main road going up from entry
+  for (let y = 26; y <= 32; y++) { fill(14, y, 2, 1, 'path-main'); }
+
+  // Slight curve approaching pharmacy
+  fill(14, 24, 2, 2, 'path-main');
+  fill(13, 22, 2, 2, 'path-main');
+  fill(13, 20, 2, 2, 'path-main');
+
+  // === PHARMACY (Partner's house) ===
+  // Position: right of main path, near entry
+  // Building footprint: 6×7 at (16, 23)
+  fill(16, 23, 6, 7, 'pharmacy');
+  fill(16, 23, 6, 1, 'pharmacy-roof'); // roof line
+  // Door facing the path
+  set(16, 26, 'door');
+
+  // Small herb garden beside house
+  set(23, 25, 'bush');
+  set(23, 26, 'bush');
+  set(24, 25, 'bush');
+
+  // === PATH: Pharmacy area → Plaza ===
+  fill(13, 18, 2, 2, 'path-main');
+  fill(12, 16, 2, 2, 'path-main');
+  fill(12, 14, 3, 2, 'path');
+
+  // === PLAZA (center area) ===
+  // Open area roughly (9,11) to (20,16)
+  fill(9, 11, 12, 6, 'plaza');
+
+  // Benches in plaza (scattered, not aligned)
+  set(11, 13, 'bench');
+  set(12, 13, 'bench');
+  set(17, 12, 'bench');
+  set(17, 13, 'bench');
+  set(14, 15, 'bench');
+
+  // NPC standing positions (just mark as plaza, NPCs are GameObjects)
+
+  // === PATH: Plaza → Weapon Shop (left) ===
+  fill(6, 12, 3, 2, 'path');
+  fill(4, 13, 2, 1, 'path');
+
+  // === WEAPON SHOP ===
+  // Largest building, left of plaza
+  // 8×6 at (1, 8)
+  fill(1, 8, 8, 6, 'weapon');
+  fill(1, 8, 8, 1, 'weapon-roof');
+  // Door facing right toward plaza
+  set(8, 11, 'door');
+  // Crates outside
+  set(9, 12, 'rock');
+  set(9, 13, 'rock');
+
+  // Signboard post
+  set(9, 10, 'fence');
+
+  // === PATH: Plaza → Tavern (upper right) ===
+  fill(21, 12, 2, 1, 'path');
+  fill(22, 11, 2, 1, 'path');
+  fill(23, 10, 2, 1, 'path');
+  fill(24, 9, 1, 2, 'path');
+
+  // === TAVERN ===
+  // Upper right, set back from plaza
+  // 6×5 at (22, 4)
+  fill(22, 4, 6, 5, 'tavern');
+  fill(22, 4, 6, 1, 'tavern-roof');
+  // Door facing down-left
+  set(23, 9, 'door');
+  // Barrel outside
+  set(21, 5, 'rock');
+  // Lantern post
+  set(21, 4, 'fence');
+
+  // === PATH: Plaza → Exchange (upper left) ===
+  fill(8, 10, 2, 1, 'path');
+  fill(7, 9, 2, 1, 'path');
+  fill(6, 7, 2, 2, 'path');
+
+  // === EXCHANGE SHOP ===
+  // 4×4 at (3, 3)
+  fill(3, 3, 4, 4, 'exchange');
+  fill(3, 3, 4, 1, 'exchange-roof');
+  // Door
+  set(6, 5, 'door');
+
+  // === PATH: Plaza → Fortune Teller (top, deeper) ===
+  fill(14, 10, 2, 1, 'path');
+  fill(15, 8, 1, 2, 'path');
+  fill(15, 6, 1, 2, 'path');
+  fill(15, 4, 1, 2, 'path');
+  fill(15, 3, 1, 1, 'path');
+
+  // === FORTUNE TELLER ===
+  // Small, tucked away at top center
+  // 3×4 at (13, 0)
+  fill(13, 0, 3, 4, 'fortune');
+  fill(13, 0, 3, 1, 'fortune-roof');
+  // Door
+  set(14, 4, 'door');
+
+  // Mysterious decoration
+  set(12, 1, 'bush');
+  set(16, 2, 'bush');
+
+  // === TREES & NATURAL ELEMENTS ===
+  // Scattered around edges to create organic boundary
+
+  // Left edge trees
+  set(0, 2, 'tree'); set(0, 5, 'tree'); set(0, 10, 'tree');
+  set(0, 15, 'tree'); set(0, 20, 'tree'); set(0, 25, 'tree');
+  set(1, 18, 'tree'); set(1, 22, 'tree');
+  set(0, 30, 'tree'); set(1, 32, 'tree');
+
+  // Right edge trees
+  set(29, 3, 'tree'); set(29, 8, 'tree'); set(29, 14, 'tree');
+  set(29, 20, 'tree'); set(28, 24, 'tree'); set(29, 28, 'tree');
+  set(29, 32, 'tree');
+
+  // Top edge trees
+  set(3, 0, 'tree'); set(8, 0, 'tree'); set(10, 0, 'tree');
+  set(20, 0, 'tree'); set(25, 0, 'tree'); set(28, 0, 'tree');
+  set(5, 1, 'tree'); set(19, 1, 'tree');
+
+  // Bottom edge trees
+  set(3, 34, 'tree'); set(7, 34, 'tree'); set(10, 33, 'tree');
+  set(22, 34, 'tree'); set(26, 34, 'tree');
+
+  // Interior scattered
+  set(10, 20, 'tree'); set(25, 18, 'tree');
+  set(4, 16, 'bush'); set(26, 14, 'bush');
+  set(11, 28, 'tree'); set(24, 30, 'tree');
+  set(18, 19, 'bush');
+  set(6, 23, 'tree'); set(7, 28, 'tree');
+  set(27, 22, 'bush');
+
+  // Rocks
+  set(2, 15, 'rock'); set(27, 7, 'rock');
+  set(10, 5, 'rock'); set(20, 20, 'rock');
+
+  // Water puddle (a tiny remnant, adds atmosphere)
+  set(26, 16, 'water'); set(27, 16, 'water');
+  set(26, 17, 'water');
+
+  // === FENCES / Small walls (broken, inconsistent) ===
+  set(10, 22, 'fence'); set(11, 22, 'fence');
+  set(24, 12, 'fence'); set(25, 12, 'fence'); set(26, 12, 'fence');
+
+  return map;
+}
+
+const map = createMap();
+
+// Build grid
+const grid = document.getElementById('grid');
+const coordDisplay = document.getElementById('coordDisplay');
+
+for (let y = 0; y < H; y++) {
+  for (let x = 0; x < W; x++) {
+    const cell = document.createElement('div');
+    cell.className = 'cell ' + map[y][x];
+    if (x % 5 === 4) cell.classList.add('major-x');
+    if (y % 5 === 4) cell.classList.add('major-y');
+    cell.addEventListener('mouseenter', () => {
+      coordDisplay.textContent = `座標: (${x}, ${y}) — ${typeLabel(map[y][x])}`;
+    });
+    grid.appendChild(cell);
+  }
+}
+
+function typeLabel(t) {
+  const labels = {
+    'ground': '地面', 'path': '脇道', 'path-main': 'メイン道',
+    'plaza': '広場', 'pharmacy': '薬屋', 'pharmacy-roof': '薬屋（屋根）',
+    'weapon': '武器屋', 'weapon-roof': '武器屋（屋根）',
+    'tavern': '酒場', 'tavern-roof': '酒場（屋根）',
+    'exchange': '交換屋', 'exchange-roof': '交換屋（屋根）',
+    'fortune': '占い屋', 'fortune-roof': '占い屋（屋根）',
+    'tree': '木', 'bush': '草・低木', 'rock': '岩・木箱',
+    'fence': '柵・看板', 'bench': 'ベンチ', 'entry': '入口',
+    'wall': '壁', 'door': 'ドア', 'water': '水たまり'
+  };
+  return labels[t] || t;
+}
+
+// Add labels on the map
+const labels = [
+  { x: 17, y: 25.5, text: '薬屋', sub: 'パートナーの家', color: 'var(--c-pharmacy)' },
+  { x: 3.5, y: 10, text: '武器屋', sub: '町で一番大きい', color: 'var(--c-weapon)' },
+  { x: 24, y: 6, text: '酒場', sub: '奥まった場所', color: 'var(--c-tavern)' },
+  { x: 4, y: 4.5, text: '交換屋', sub: '', color: 'var(--c-exchange)' },
+  { x: 13.5, y: 1.5, text: '占い屋', sub: '最奥', color: 'var(--c-fortune)' },
+  { x: 13.5, y: 12.5, text: '広場', sub: '', color: 'var(--c-plaza)' },
+  { x: 13.5, y: 34, text: '▼ 入口', sub: '', color: 'var(--c-entry)' },
+];
+
+const tile = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--tile'));
+labels.forEach(l => {
+  const label = document.createElement('div');
+  label.className = 'label';
+  label.style.left = (l.x * tile + 16) + 'px'; // 16 = padding
+  label.style.top = (l.y * tile + 16 + 24 + 16) + 'px'; // offsets for header
+  label.style.color = l.color;
+  label.innerHTML = l.text + (l.sub ? `<span class="label-sub">${l.sub}</span>` : '');
+  document.querySelector('.grid-wrapper').appendChild(label);
+});
+
+grid.addEventListener('mouseleave', () => {
+  coordDisplay.textContent = '座標: --';
+});
+</script>
+
+</body>
+</html>

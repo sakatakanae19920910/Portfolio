@@ -1,0 +1,45 @@
+ID,Name,ConsumableType,TargetScope,EffectValue,Element,AilmentCure,AilmentGrant,StatBoost,StatBoostValue,UsableInBattle,UsableInField,BuyPrice,SellPrice,IsGiftable,GiftTarget,EmpathyValue,Description
+# === HP回復 (3001-3099) ===
+3001,白い小花,HpRecover,OneAlly,50,,,,,TRUE,TRUE,60,30,FALSE,,,死後の国に咲く小さく白い花。癒しの力を持ち、HPを少し回復させる。
+3002,薬湯,HpRecover,OneAlly,150,,,,,TRUE,TRUE,340,170,FALSE,,,調合された薬。体の傷を癒し、そこそこの回復効果を持つ。
+3003,聖花の蜜,HpRecover,OneAlly,500,,,,,TRUE,TRUE,0,400,FALSE,,,聖なる花から採れた貴重な蜜。深い癒しの力を宿している。
+3004,いのちの雫,HpRecover,AllAllies,200,,,,,TRUE,TRUE,0,500,FALSE,,,神秘的な力を秘めた清らかな雫。味方全体の傷を癒す。
+# === MP回復 (3101-3199) ===
+3101,小さな魔晶石,MpRecover,OneAlly,30,,,,,TRUE,TRUE,600,300,FALSE,,,魔力を蓄えた小さな鉱石。触れると魔力が回復する。
+3102,綺麗な魔晶石,MpRecover,OneAlly,100,,,,,TRUE,TRUE,0,600,FALSE,,,高純度の魔力を秘めた結晶石。魔力を大きく回復させる。
+# === 蘇生 (3201-3299) ===
+3201,気付け薬,Revive,OneDeadAlly,50,,,,,TRUE,FALSE,1200,600,FALSE,,,強い刺激を持つ薬。意識を瞬時に覚醒させる。
+3202,黄泉鳥の羽根,Revive,OneDeadAlly,300,,,,,TRUE,FALSE,0,1000,FALSE,,,黄泉を渡る霊鳥の羽根。冥火を宿し、消えかけた魂を再び燃え上がらせる。
+3203,蘇りの輝石,FullRecover,OneAlly,9999,,,,,TRUE,TRUE,0,2000,FALSE,,,消えかけた魂を呼び戻す奇跡の石。体と心の全てを癒す。
+# === 状態異常治療 (3301-3399) ===
+3301,勇気の鈴,AilmentCure,OneAlly,,,Fear,,,TRUE,TRUE,180,90,FALSE,,,澄んだ音色で恐怖を一瞬で払う鈴。
+3302,解毒の丸薬,AilmentCure,OneAlly,,,Poison;Paralysis,,,TRUE,TRUE,300,150,FALSE,,,解毒に特化した薬草を丸薬にしたもの。飲めば毒と麻痺が治る。
+3303,月影草,AilmentCure,OneAlly,,,Sleep;Blind,,,TRUE,TRUE,240,120,FALSE,,,夜に輝く花。眠気と暗闇を払う力がある。
+3304,静寂の香,AilmentCure,OneAlly,,,Confusion;Berserk,,,TRUE,TRUE,360,180,FALSE,,,精神を安定させる香木の煙。混乱・暴走した意識を戻す。
+3305,ニガダンゴ,AilmentCure,OneAlly,,,Curse,,,TRUE,TRUE,420,210,FALSE,,,とても苦い団子。体にとりついた呪いを祓い浄化する。
+3306,獅子神の角,AilmentCure,OneAlly,,,All,,,TRUE,TRUE,0,800,FALSE,,,伝説の神獣が落とした角のかけら。あらゆる邪悪な力を無にする。
+# === 攻撃系 (3401-3499) ===
+3401,灼熱の火種,Attack,OneEnemy,80,Fire,,,,TRUE,FALSE,0,150,FALSE,,,炎の力を秘める小さな種。敵単体に炎属性のダメージを与える。
+3402,冷涼の水晶,Attack,OneEnemy,80,Water,,,,TRUE,FALSE,0,150,FALSE,,,凍て付く波動を封じた塊。敵単体に水属性のダメージを与える。
+3403,風刃の羽根,Attack,OneEnemy,80,Wind,,,,TRUE,FALSE,0,150,FALSE,,,鋭い風の力を秘めた羽根。敵単体に風属性のダメージを与える。
+3404,大地の裂石,Attack,OneEnemy,80,Earth,,,,TRUE,FALSE,0,150,FALSE,,,大地の怒りを宿す石。敵単体に地属性のダメージを与える。
+3405,純光の結晶,Attack,OneEnemy,80,Light,,,,TRUE,FALSE,0,150,FALSE,,,使えば眩い閃光がほとばしる。敵単体に光属性のダメージを与える。
+3406,黒曜の呪石,Attack,OneEnemy,80,Dark,,,,TRUE,FALSE,0,150,FALSE,,,呪いの力を秘めた黒い石。敵単体に闇属性のダメージを与える。
+# === バフ・耐性 (3451-3499) ===
+3451,六合の護符,Resist,OneAlly,5,,,,All,,TRUE,FALSE,0,500,FALSE,,,天地四方を司る護符。全ての元素属性耐性が一段階上がる。
+# === 永続強化 (3501-3599) ===
+3501,紅玉の粒,StatBoost,OneAlly,,,,Attack,2,FALSE,TRUE,0,500,FALSE,,,攻撃力を２上げる。
+3502,蒼玉の粒,StatBoost,OneAlly,,,,Defense,2,FALSE,TRUE,0,500,FALSE,,,防御力を２上げる。
+3503,翠玉の粒,StatBoost,OneAlly,,,,MagicPower,2,FALSE,TRUE,0,500,FALSE,,,魔力を２上げる。
+3504,黄玉の粒,StatBoost,OneAlly,,,,MagicDefense,2,FALSE,TRUE,0,500,FALSE,,,抗魔力を２上げる。
+3505,電気石の粒,StatBoost,OneAlly,,,,Agility,2,FALSE,TRUE,0,500,FALSE,,,敏捷性を２上げる。
+3506,柘榴石の粒,StatBoost,OneAlly,,,,MaxHp,5,FALSE,TRUE,0,500,FALSE,,,最大ＨＰを５上げる。
+3507,紫水晶の粒,StatBoost,OneAlly,,,,MaxMp,5,FALSE,TRUE,0,500,FALSE,,,最大ＭＰを５上げる。
+3508,金剛石の粒,StatBoost,OneAlly,,,,All,1,FALSE,TRUE,0,1000,FALSE,,,全能力を１上げる。
+# === 感情付与 (3551-3599) ===
+3551,駆逐の焔,EmotionGrant,OneAlly,,,,,Anger,,TRUE,FALSE,0,200,FALSE,,,飲めば胸に炎が宿り怒りが噴き出す赤い液薬。
+3552,追憶の果実,EmotionGrant,OneAlly,,,,,Sadness,,TRUE,FALSE,0,200,FALSE,,,一口かじれば哀しみが沁みる、苦味と酸味の強い果実。
+# === 素材 (3601-3699) ===
+3601,ミタマ石,Material,,,,,,,,FALSE,FALSE,0,50,FALSE,,,魔物が落とすことのある不思議な石。交換所で使える。
+3602,小さな実,Material,,,,,,,,FALSE,FALSE,0,20,FALSE,,,マンドレイク系が落とす小さな実。
+3603,牙,Material,,,,,,,,FALSE,FALSE,0,30,FALSE,,,コウモリ系が落とす牙。

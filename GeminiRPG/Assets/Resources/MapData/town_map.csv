@@ -1,0 +1,41 @@
+# 町タイルマップ設計図 (30x35)
+# Generated from 町タイルマップ設計図.html
+# セルタイプ: ground, path, path-main, plaza, pharmacy, pharmacy-roof,
+#   weapon, weapon-roof, tavern, tavern-roof, exchange, exchange-roof,
+#   fortune, fortune-roof, tree, bush, rock, fence, bench, entry,
+#   wall, door, water
+ground,ground,ground,tree,ground,ground,ground,ground,tree,ground,tree,ground,ground,fortune-roof,fortune-roof,fortune-roof,ground,ground,ground,ground,tree,ground,ground,ground,ground,tree,ground,ground,tree,ground
+ground,ground,ground,ground,ground,tree,ground,ground,ground,ground,ground,ground,bush,fortune,fortune,fortune,ground,ground,ground,tree,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground
+tree,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,fortune,fortune,fortune,bush,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground
+ground,ground,ground,exchange-roof,exchange-roof,exchange-roof,exchange-roof,ground,ground,ground,ground,ground,ground,fortune,fortune,fortune,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,tree
+ground,ground,ground,exchange,exchange,exchange,exchange,ground,ground,ground,ground,ground,ground,ground,door,path,ground,ground,ground,ground,ground,fence,tavern-roof,tavern-roof,tavern-roof,tavern-roof,tavern-roof,tavern-roof,ground,ground
+tree,ground,ground,exchange,exchange,exchange,door,ground,ground,ground,rock,ground,ground,ground,ground,path,ground,ground,ground,ground,ground,rock,tavern,tavern,tavern,tavern,tavern,tavern,ground,ground
+ground,ground,ground,exchange,exchange,exchange,exchange,ground,ground,ground,ground,ground,ground,ground,ground,path,ground,ground,ground,ground,ground,ground,tavern,tavern,tavern,tavern,tavern,tavern,ground,ground
+ground,ground,ground,ground,ground,ground,path,path,ground,ground,ground,ground,ground,ground,ground,path,ground,ground,ground,ground,ground,ground,tavern,tavern,tavern,tavern,tavern,rock,ground,ground
+ground,weapon-roof,weapon-roof,weapon-roof,weapon-roof,weapon-roof,path,path,weapon-roof,ground,ground,ground,ground,ground,ground,path,ground,ground,ground,ground,ground,ground,tavern,tavern,tavern,tavern,tavern,tavern,ground,tree
+ground,weapon,weapon,weapon,weapon,weapon,weapon,path,path,ground,ground,ground,ground,ground,ground,path,ground,ground,ground,ground,ground,ground,ground,door,path,ground,ground,ground,ground,ground
+tree,weapon,weapon,weapon,weapon,weapon,weapon,weapon,path,path,ground,ground,ground,ground,path,path,ground,ground,ground,ground,ground,ground,ground,path,path,ground,ground,ground,ground,ground
+ground,weapon,weapon,weapon,weapon,weapon,weapon,weapon,door,plaza,plaza,plaza,plaza,plaza,plaza,plaza,plaza,plaza,plaza,plaza,plaza,ground,path,path,ground,ground,ground,ground,ground,ground
+ground,weapon,weapon,weapon,weapon,weapon,weapon,weapon,weapon,rock,plaza,plaza,plaza,plaza,plaza,plaza,plaza,bench,plaza,plaza,plaza,path,path,ground,fence,fence,fence,ground,ground,ground
+ground,weapon,weapon,weapon,weapon,weapon,weapon,weapon,weapon,rock,plaza,bench,bench,plaza,plaza,plaza,plaza,bench,plaza,plaza,plaza,ground,ground,ground,ground,ground,ground,ground,ground,ground
+ground,ground,ground,ground,ground,ground,ground,ground,ground,plaza,plaza,plaza,plaza,plaza,plaza,plaza,plaza,plaza,plaza,plaza,plaza,ground,ground,ground,ground,ground,bush,ground,ground,tree
+tree,ground,rock,ground,ground,ground,ground,ground,ground,plaza,plaza,plaza,plaza,plaza,bench,plaza,plaza,plaza,plaza,plaza,plaza,ground,ground,ground,ground,ground,ground,ground,ground,ground
+ground,ground,ground,ground,bush,ground,ground,ground,ground,plaza,plaza,plaza,plaza,plaza,plaza,plaza,plaza,plaza,plaza,plaza,plaza,ground,ground,ground,ground,ground,water,water,ground,ground
+ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,path-main,path-main,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,water,ground,ground,ground
+ground,tree,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,path-main,path-main,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,tree,ground,ground,ground,ground
+ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,path-main,path-main,ground,ground,ground,bush,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground
+tree,ground,ground,ground,ground,ground,ground,ground,ground,ground,tree,ground,ground,path-main,path-main,ground,ground,ground,ground,ground,rock,ground,ground,ground,ground,ground,ground,ground,ground,tree
+ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,path-main,path-main,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground
+ground,tree,ground,ground,ground,ground,ground,ground,ground,ground,fence,fence,ground,path-main,path-main,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,bush,ground,ground
+ground,ground,ground,ground,ground,ground,tree,ground,ground,ground,ground,ground,ground,path-main,path-main,ground,pharmacy-roof,pharmacy-roof,pharmacy-roof,pharmacy-roof,pharmacy-roof,pharmacy-roof,ground,ground,ground,ground,ground,ground,ground,ground
+ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,path-main,path-main,pharmacy,pharmacy,pharmacy,pharmacy,pharmacy,pharmacy,ground,ground,ground,ground,ground,ground,tree,ground
+tree,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,path-main,path-main,pharmacy,pharmacy,pharmacy,pharmacy,pharmacy,pharmacy,ground,bush,bush,ground,ground,ground,ground,ground
+ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,path-main,path-main,door,pharmacy,pharmacy,pharmacy,pharmacy,pharmacy,ground,bush,ground,ground,ground,ground,ground,ground
+ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,path-main,path-main,pharmacy,pharmacy,pharmacy,pharmacy,pharmacy,pharmacy,ground,ground,ground,ground,ground,ground,ground,ground
+ground,ground,ground,ground,ground,ground,ground,tree,ground,ground,ground,tree,ground,ground,path-main,path-main,pharmacy,pharmacy,pharmacy,pharmacy,pharmacy,pharmacy,ground,ground,ground,ground,ground,ground,ground,tree
+ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,path-main,path-main,pharmacy,pharmacy,pharmacy,pharmacy,pharmacy,pharmacy,ground,ground,ground,ground,ground,ground,ground,ground
+tree,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,path-main,path-main,ground,ground,ground,ground,ground,ground,ground,ground,tree,ground,ground,ground,ground,ground
+ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,path-main,path-main,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground
+ground,tree,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,path-main,path-main,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,tree
+ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,tree,ground,ground,entry,entry,entry,entry,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground,ground
+ground,ground,ground,tree,ground,ground,ground,tree,ground,ground,ground,ground,ground,entry,entry,entry,entry,ground,ground,ground,ground,ground,tree,ground,ground,ground,tree,ground,ground,ground

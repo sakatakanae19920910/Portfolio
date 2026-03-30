@@ -1,0 +1,14 @@
+Label,Command,Speaker,Text,Args
+Test_Start,Text,カイリ,"おはよう、ナギ。¥nシナリオテストだってよ。",face=normal
+,Text,ナギ,……うん。,face=normal
+,Text,カイリ,どうした？変な顔して,face=normal
+,Text,ナギ,やっとカイリと話せると思ったら嬉しくてね。,face=normal
+,Text,カイリ,……へへっ、オレも！,face=normal
+,CharHide,,,
+,Wait,,,time=1
+Test_Rui,Text,ルイ,ミズキ！シナリオテストだってよ！,face=normal
+,Text,ミズキ,"ルイ……。やっとルイと話せるんだね！",face=normal
+,Text,ルイ,"ふふ、そうだな！",face=normal
+,Text,ミズキ,嬉しい！,face=normal
+,CharHide,,,
+Test_End,End,,,

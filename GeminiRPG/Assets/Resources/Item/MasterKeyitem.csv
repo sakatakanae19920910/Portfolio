@@ -1,0 +1,29 @@
+ID,Name,KeyItemType,PassiveEffect,PassiveTarget,UseAction,Description
+# === ストーリー (4001-4099) ===
+4001,鏡のかけら,Story,,,,シナリオ進行のトリガー。加護（パッシブスキル）を習得する。
+4002,小さなオルゴール,Special,,,PlayMusicBox,使用すると、２つの魂を繋ぐ子守歌が聞ける。
+4003,巾着袋,Special,,,OpenPouch,硬貨が6枚入っている巾着袋。誰かが持たせてくれたのだろうか。
+# === パッシブ効果 (4011-4050) ===
+4011,ちぎれた首輪,Passive,SpeedEvasionUp,Pechi,,所持しているとペチの素早さと回避率が上昇する。
+4012,アカネ草のサシェ,Passive,AttackMagicUp,Kaguya,,所持しているとカグヤの攻撃力、魔力が上昇する。
+4013,古びた鉛筆,Passive,DefMagDefUp,Hayate,,所持しているとハヤテの防御・抗魔力が上昇する。
+# === 探索用 (4051-4099) ===
+4051,錠前師の遺作,Exploration,,,,とある鍵職人の最高傑作。あらゆる鍵を開けることができる。
+4052,フェアリーテイルフレア,Exploration,,,,隠し部屋の前で反応する宝玉。妖精の秘宝。
+# === 文書片 (4101-4199) ===
+4101,ある魔女の手記,Document,,,ReadDocument,
+4102,裁判記録,Document,,,ReadDocument,
+4103,村人の書き付け,Document,,,ReadDocument,
+4104,名医の伝記,Document,,,ReadDocument,
+4105,兵士の遺書,Document,,,ReadDocument,
+4106,作戦報告書,Document,,,ReadDocument,
+4107,教科書,Document,,,ReadDocument,
+4108,回顧録,Document,,,ReadDocument,
+4109,遺失届,Document,,,ReadDocument,
+4110,夏休みの日記,Document,,,ReadDocument,
+4111,清掃員の日報,Document,,,ReadDocument,
+4112,看護記録,Document,,,ReadDocument,
+4113,ある母の手記1,Document,,,ReadDocument,
+4114,ある母の手記2,Document,,,ReadDocument,
+4115,ある母の手記3,Document,,,ReadDocument,
+4116,ある母の手記4,Document,,,ReadDocument,
