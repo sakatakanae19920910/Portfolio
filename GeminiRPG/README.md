@@ -1,8 +1,10 @@
-# 流転のジェミニ (Ruten no Gemini)
+# 流転のジェミニ - Gemini in Flux
 
 Unity製 2Dターン制RPG。個人開発プロジェクト。
 
 「死後の世界」を舞台にしたダークファンタジーRPGで、感情パラメータシステムや独自のシナリオエンジンを自作しています。
+
+2026年5月 インディーゲームWebオンリー **EARLY TAKES** にショートデモ版を出展。
 
 ---
 
@@ -21,7 +23,7 @@ Unity製 2Dターン制RPG。個人開発プロジェクト。
 CSVファイルをコマンドに変換し、順次実行するシナリオシステムを独自実装しました。
 
 ```
-Chapter1.csv → ScenarioLoader → List<ScenarioCommand> → ScenarioExecutor
+Demo_TownMorning.csv → ScenarioLoader → List<ScenarioCommand> → ScenarioExecutor
 ```
 
 - `ScenarioLoader.cs` : CSVを行単位でパースし、引数を辞書型に変換
@@ -32,62 +34,95 @@ Chapter1.csv → ScenarioLoader → List<ScenarioCommand> → ScenarioExecutor
 
 ### 2. 感情パラメータシステム
 
-キャラクターごとに「共感・信頼・勇気」などの感情値を持ち、会話や戦闘の選択によって変化するオリジナルシステムです。感情値はストーリー分岐や立ち絵の表情差分に影響します。
+キャラクターごとに複数の感情値を持ち、会話や戦闘の選択によって変化するオリジナルシステムです。感情値はストーリー分岐や立ち絵の表情差分に影響します。
 
 - `EmotionParameter.cs` : 感情値の定義・管理
 - `EmotionEffect.cs` : 感情変化のトリガー定義
 
-### 3. Unityエディタ拡張ツール
+### 3. フィールドシステム
+
+- `PlayerController.cs` : WASD/矢印キー/ゲームパッド対応のトップダウン2D移動
+- `NPCTrigger.cs` : NPC接触で会話を起動するトリガー
+- `MapTransition.cs` / `TransitionFader.cs` : マップ遷移（フェード演出込み）
+- `CameraFollow.cs` : プレイヤー追従カメラ
+- `DoorController.cs` : ドア開閉・遷移制御
+- `AreaBlocker.cs` : フラグ条件によるエリア封鎖
+- `MitamaStoneItem.cs` : フィールド上の収集アイテム（ミタマ石）
+- `SparkleLoop.cs` / `FieldGlowEffect.cs` : フィールド演出エフェクト
+
+### 4. サウンドマネージャー（Singleton）
+
+BGM・BGS・ME・SEを種別ごとにAudioSourceプールで管理するシングルトン。フェードイン/アウト対応。`DontDestroyOnLoad`でシーンをまたいで永続化しています。`SoundManagerBootstrap.cs` で起動時に自動生成するScriptableObject設定方式を採用。
+
+### 5. Unityエディタ拡張ツール
 
 開発効率を上げるためのエディタ拡張を実装しました。
 
 - `ItemImporter.cs` : CSVからScriptableObjectを一括生成するインポーター
 - `TownMapBuilder.cs` : CSVのマップデータからタイルマップを自動配置するツール
-- `TileMapping.cs` : タイルIDとTileAssetの対応マッピング
-
-### 4. サウンドマネージャー（Singleton）
-
-BGM・BGS・ME・SEを種別ごとにAudioSourceプールで管理するシングルトン。フェードイン/アウト対応。`DontDestroyOnLoad`でシーンをまたいで永続化しています。
-
-### 5. フィールドシステム
-
-- `PlayerController.cs` : WASD/矢印キー/ゲームパッド対応のトップダウン2D移動
-- `NPCTrigger.cs` : NPC接触で会話を起動するトリガー
-- `MapTransition.cs` : マップ遷移（フェード演出込み）
-- `CameraFollow.cs` : プレイヤー追従カメラ
+- `RuleTileGenerator.cs` : RPG Maker形式のオートタイル素材からUnity Rule Tileを一括生成
+- `NPCColliderSetup.cs` : NPCコライダーを一括更新
+- `DemoTransitionSetup.cs` : シーン遷移を一括セットアップ
 
 ---
 
 ## ディレクトリ構成
 
 ```
-Assets/Scripts/
-├── BootLoader.cs           # 起動シーン制御
-├── SoundManager.cs         # サウンド管理（Singleton）
-├── Character/              # キャラクター・感情システム
-├── Data/                   # ScriptableObjectデータクラス
-├── Editor/                 # エディタ拡張ツール
-├── Player/                 # フィールド移動・カメラ
-├── Scenario/               # シナリオエンジン
-└── Test/                   # テストコード
+Assets/
+├── Scripts/
+│   ├── BootLoader.cs           # 起動シーン制御
+│   ├── SoundManager.cs         # サウンド管理（Singleton）
+│   ├── SoundManagerBootstrap.cs# 起動時サウンドマネージャー自動生成
+│   ├── GameData.cs             # ゲーム全体の状態管理
+│   ├── Character/              # キャラクター・感情システム
+│   ├── Data/                   # ScriptableObjectデータクラス
+│   ├── Debug/                  # デバッグ用ツール
+│   ├── Editor/                 # エディタ拡張ツール
+│   ├── Field/                  # フィールドギミック・演出
+│   ├── Player/                 # フィールド移動・カメラ・遷移
+│   ├── Scenario/               # シナリオエンジン
+│   ├── UI/                     # UI制御
+│   └── Test/                   # テストコード
+├── Resources/
+│   ├── Audio/                  # BGM・SE（mp3）
+│   ├── Characters/             # キャラクター立ち絵・ScriptableObject
+│   ├── Enemy/                  # 敵データ（CSV）
+│   ├── Item/                   # アイテムデータ（CSV）
+│   ├── MapData/                # タイルマッピングアセット
+│   └── Scenario/               # シナリオCSV（Demo/・Chapter1/）
+└── Scenes/
+    ├── BootScene               # 起動・初期化
+    ├── TitleScene              # タイトル
+    ├── IntroScene              # イントロ
+    ├── TownScene               # 町フィールド
+    ├── TavernScene             # 酒場
+    ├── PartnerHouse1FScene     # パートナーの家
+    ├── WeaponShopScene         # 武器屋
+    ├── TraderScene             # 行商人
+    ├── DemoEndScene            # デモ終了画面
+    └── PrologueScene           # プロローグ（本編）
 
 Docs/
-├── データ類準備/
-│   ├── 機能仕様書/         # 各システムの機能仕様
-│   └── 設計書・仕様書/     # クラス図・シーケンス図・データフロー図
-└── 開発ログ/               # 月次の開発記録
+├── 技術仕様/
+│   ├── 機能仕様書/             # 各システムの機能仕様
+│   └── 設計書・仕様書/         # クラス図・データフロー・データ仕様
+└── 開発ログ/                   # 月次の開発記録
 ```
 
 ---
 
 ## 開発状況
 
-現在 **Phase 0.5** （2026年5月 EARLY TAKES出展に向けたデモ版制作中）。
+**Phase 0.5 完了**（2026年5月 EARLY TAKES出展・ショートデモ公開）→ **Phase 1（戦闘システム）進行中**
 
 - [x] シナリオエンジン（テキスト・選択肢・フラグ分岐・立ち絵・BGM）
 - [x] フィールド移動・NPC会話・マップ遷移
+- [x] 複数マップ（町・酒場・店・パートナーの家）
 - [x] 感情パラメータ基盤
 - [x] アイテムデータ（武器・防具・消耗品・キーアイテム）
-- [x] エディタ拡張（CSVインポーター・マップ自動配置）
-- [ ] 戦闘システム（Phase 1）
+- [x] エディタ拡張（CSVインポーター・マップ自動配置・オートタイル自動生成）
+- [x] サウンドシステム（BGM・SE・シーンまたぎ永続化）
+- [x] ショートデモ版リリース（Unityroom）・Steam Coming Soon 公開
+- [ ] 戦闘システム（Phase 1 / 2026年6〜8月）
 - [ ] セーブ/ロード（Phase 2）

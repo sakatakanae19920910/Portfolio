@@ -13,3 +13,5 @@ Unity製 2Dターン制RPG「流転のジェミニ」の開発リポジトリ。
 - **言語**: C#
 - **エンジン**: Unity / URP
 - データ駆動型シナリオエンジン、感情パラメータシステム、エディタ拡張ツールなどを自作
+
+**[▶ ショートデモをプレイ（Unityroom）](https://unityroom.com/games/geminiinflux)**
