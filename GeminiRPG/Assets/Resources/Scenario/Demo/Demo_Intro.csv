@@ -1,0 +1,22 @@
+Label,Command,Speaker,text_ja,text_en,Args
+# ==================== イントロ：主人公選択 ====================
+# タイトル画面の START を押した後に流れるシーン
+# TextFade で世界観テキストを流してから選択肢を表示する
+Intro_Start,BGM,,,,action=Stop
+,TextFade,,――死後の国。,――The Afterworld.,manual=true
+,TextFade,,生を終えた魂が集う、もう一つの世界。,"Another world, where souls who have ended their lives gather.",manual=true
+,TextFade,,ここでは誰もが死者であり、次の生を待っている。,"Here, everyone is one of the dead, awaiting their next life.",manual=true
+,TextFade,,あなたは記憶を失い、この世界に流れ着いた。¥n一人の薬屋に拾われ、共に暮らしている。,"You lost your memories and washed up in this world.¥nAn apothecary took you in, and you have lived together since.",manual=true
+# --- 選択肢 ---
+# Choice で選択肢を並べ、Stop で押されるまで待機する
+,Choice,,ミズキ（少女) | パートナー：ルイ(少女）,Mizuki (Girl) | Partner: Rui (Girl),jumpTo=SelectMizuki
+,Choice,,ナギ（少年) | パートナー：カイリ(少年）,Nagi (Boy) | Partner: Kairi (Boy),jumpTo=SelectNagi
+,Stop,,,,prompt=主人公を選択してください; prompt_en=Choose your protagonist.; fade=true
+# --- ミズキ選択 ---
+SelectMizuki,SetPlayerChar,,,,char=Mizuki
+,FadeOut,,,,time=0.5; color=black
+,LoadScene,,,,scene=PartnerHouse1FScene; time=2; face=left
+# --- ナギ選択 ---
+SelectNagi,SetPlayerChar,,,,char=Nagi
+,FadeOut,,,,time=0.5; color=black
+,LoadScene,,,,scene=PartnerHouse1FScene; time=2; face=left

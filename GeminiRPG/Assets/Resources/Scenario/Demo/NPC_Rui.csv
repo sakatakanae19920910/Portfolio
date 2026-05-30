@@ -1,0 +1,29 @@
+Label,Command,Speaker,text_ja,text_en,Args
+# ==================== ルイ（ミズキ編） ====================
+# きらきら星があればギフトシーン（デモエンド）へ、なければ普通の会話
+
+,BranchItem,,,,name=KirakiraStar; jumpTo=Rui_Gift
+
+# ---------- 普通の会話 ----------
+,Text,ルイ,あんまり遠くに行くなよ……ってまた言っちゃった。,...Don't wander too far... there I go saying it again.,face=03
+,Text,ルイ,子供扱いってわけじゃないけどさ、¥nあんたを見るとついね。,Not that I'm babying you or anything...¥nit just slips out when I see you.,face=Smile08
+,End,,,,
+
+# ---------- ギフトシーン（きらきら星を持っている場合） ----------
+Rui_Gift,BGM,,,,name=Scene_Morning
+,Text,ルイ,え？これ、私に？,What? This... for me?,face=04
+,Text,ルイ,いやいや待て！¥nこれ、貴重なもんじゃないのか！？¥nあんたがつけなきゃ意味ないだろ！,"Wait, wait, hold on!¥nIsn't this something rare?!¥nYou should be the one wearing it!",face=05
+,Text,ルイ,……なんだよ、そんな目で見られたら……、¥nわかった。もらうよ。,"...Geez, don't give me that look...¥nFine. I'll take it.",face=02
+,Text,ルイ,……ふふん、どう？似合うだろ。,"...Heh, how's it look? Suits me, doesn't it?",face=Smile06
+,Text,ルイ,大事にする、ありがとな。,I'll treasure it. Thanks.,face=Smile07
+,FadeOut,,,,time=1; color=black
+,PlayerHide,,,,
+,NPCFace,,,,dir=down
+,BGM,,,,action=Stop
+,FadeIn,,,,time=1
+,Text,ルイ,ミズキ、また外行ったのか。落ち着きのないやつ。,"Mizuki, off again, huh.¥nCan't sit still, that one.",face=Smile08
+,Text,ルイ,へへ、綺麗だな……。,Hehe... it's beautiful...,face=Smile09
+,Text,ルイ,……なあ、ミズキ。¥nもし本当の私を知ってたとしても、¥nあんたはこれ、くれたのかな。,"...Hey, Mizuki.¥nEven if you knew the real me...¥nwould you still have given me this?",face=07
+,Text,ルイ,なんて、なに言ってんだか。,"...Pfft, what am I even saying.",face=08
+,FadeOut,,,,time=1; color=black
+,LoadScene,,,,scene=DemoEndScene; time=2

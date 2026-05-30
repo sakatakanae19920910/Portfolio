@@ -1,0 +1,2613 @@
+fileFormatVersion: 2
+guid: 005a663abb11f447c85847fe5d304284
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -72623243896075080
+    second: Ch_Monster01_A_0
+  - first:
+      213: 3749643893677355470
+    second: Ch_Monster01_A_1
+  - first:
+      213: -7582672551005746728
+    second: Ch_Monster01_A_2
+  - first:
+      213: 6866471102939263677
+    second: Ch_Monster01_A_3
+  - first:
+      213: 381730787608700025
+    second: Ch_Monster01_A_4
+  - first:
+      213: -5763481529703193080
+    second: Ch_Monster01_A_5
+  - first:
+      213: 1334006001393358696
+    second: Ch_Monster01_A_6
+  - first:
+      213: 6485745607567255647
+    second: Ch_Monster01_A_7
+  - first:
+      213: 2043425309113184696
+    second: Ch_Monster01_A_8
+  - first:
+      213: -2399105585605284102
+    second: Ch_Monster01_A_9
+  - first:
+      213: 9146278469190248797
+    second: Ch_Monster01_A_10
+  - first:
+      213: -924392867064294300
+    second: Ch_Monster01_A_11
+  - first:
+      213: 5077910420818853798
+    second: Ch_Monster01_A_12
+  - first:
+      213: -3387579259343792160
+    second: Ch_Monster01_A_13
+  - first:
+      213: 4909033353101911067
+    second: Ch_Monster01_A_14
+  - first:
+      213: 7845644522613851671
+    second: Ch_Monster01_A_15
+  - first:
+      213: -1135768038801534979
+    second: Ch_Monster01_A_16
+  - first:
+      213: -786254688580861299
+    second: Ch_Monster01_A_17
+  - first:
+      213: -1050633899194122313
+    second: Ch_Monster01_A_18
+  - first:
+      213: 4425669725675504577
+    second: Ch_Monster01_A_19
+  - first:
+      213: -15734104606860854
+    second: Ch_Monster01_A_20
+  - first:
+      213: -8034965718140952905
+    second: Ch_Monster01_A_21
+  - first:
+      213: -2251292076828454995
+    second: Ch_Monster01_A_22
+  - first:
+      213: -6944752883363605504
+    second: Ch_Monster01_A_23
+  - first:
+      213: -2089181442421873335
+    second: Ch_Monster01_A_24
+  - first:
+      213: 994901925236168429
+    second: Ch_Monster01_A_25
+  - first:
+      213: 8853946610871170224
+    second: Ch_Monster01_A_26
+  - first:
+      213: -6992743383422589669
+    second: Ch_Monster01_A_27
+  - first:
+      213: 2468604250164241855
+    second: Ch_Monster01_A_28
+  - first:
+      213: -7404345400170612076
+    second: Ch_Monster01_A_29
+  - first:
+      213: -7572486516880440821
+    second: Ch_Monster01_A_30
+  - first:
+      213: 8108453128978029493
+    second: Ch_Monster01_A_31
+  - first:
+      213: -2194046809159323094
+    second: Ch_Monster01_A_32
+  - first:
+      213: -2218584773407419309
+    second: Ch_Monster01_A_33
+  - first:
+      213: 5074336589317028389
+    second: Ch_Monster01_A_34
+  - first:
+      213: 8983483494169919655
+    second: Ch_Monster01_A_35
+  - first:
+      213: -367006652569296208
+    second: Ch_Monster01_A_36
+  - first:
+      213: 8766812221546044164
+    second: Ch_Monster01_A_37
+  - first:
+      213: 5347766546392752059
+    second: Ch_Monster01_A_38
+  - first:
+      213: -5705959827613568193
+    second: Ch_Monster01_A_39
+  - first:
+      213: 4548207881241959975
+    second: Ch_Monster01_A_40
+  - first:
+      213: -5703957529344550888
+    second: Ch_Monster01_A_41
+  - first:
+      213: 1733257972545318784
+    second: Ch_Monster01_A_42
+  - first:
+      213: 3472239742975906366
+    second: Ch_Monster01_A_43
+  - first:
+      213: 7079707407381586446
+    second: Ch_Monster01_A_44
+  - first:
+      213: -6365780064614854671
+    second: Ch_Monster01_A_45
+  - first:
+      213: -1221587661105850788
+    second: Ch_Monster01_A_46
+  - first:
+      213: -4453530363247354518
+    second: Ch_Monster01_A_47
+  - first:
+      213: -8226810426254486128
+    second: Ch_Monster01_A_48
+  - first:
+      213: 7825820149504011940
+    second: Ch_Monster01_A_49
+  - first:
+      213: -4032488850909268409
+    second: Ch_Monster01_A_50
+  - first:
+      213: -992122141886028036
+    second: Ch_Monster01_A_51
+  - first:
+      213: -1955325841638635169
+    second: Ch_Monster01_A_52
+  - first:
+      213: 7706989321170182222
+    second: Ch_Monster01_A_53
+  - first:
+      213: 6370022363717595343
+    second: Ch_Monster01_A_54
+  - first:
+      213: 1619714002244657377
+    second: Ch_Monster01_A_55
+  - first:
+      213: 5641903453609313259
+    second: Ch_Monster01_A_56
+  - first:
+      213: -7208064749727891054
+    second: Ch_Monster01_A_57
+  - first:
+      213: -1748533936137731952
+    second: Ch_Monster01_A_58
+  - first:
+      213: 1062508283000890713
+    second: Ch_Monster01_A_59
+  - first:
+      213: -8085012737507506975
+    second: Ch_Monster01_A_60
+  - first:
+      213: 2516631924912204374
+    second: Ch_Monster01_A_61
+  - first:
+      213: 4275788831564717910
+    second: Ch_Monster01_A_62
+  - first:
+      213: 2963408039006058954
+    second: Ch_Monster01_A_63
+  - first:
+      213: -4603737192673943558
+    second: Ch_Monster01_A_64
+  - first:
+      213: -5511094926497202712
+    second: Ch_Monster01_A_65
+  - first:
+      213: -8803337561763812807
+    second: Ch_Monster01_A_66
+  - first:
+      213: -8654571893160312823
+    second: Ch_Monster01_A_67
+  - first:
+      213: 8196824157740660558
+    second: Ch_Monster01_A_68
+  - first:
+      213: -1141176016812595646
+    second: Ch_Monster01_A_69
+  - first:
+      213: 7038365009892432275
+    second: Ch_Monster01_A_70
+  - first:
+      213: 6906647298219078270
+    second: Ch_Monster01_A_71
+  - first:
+      213: -6165868587238239315
+    second: Ch_Monster01_A_72
+  - first:
+      213: 7278067612851114768
+    second: Ch_Monster01_A_73
+  - first:
+      213: -7874550178599709153
+    second: Ch_Monster01_A_74
+  - first:
+      213: 2305768115023502007
+    second: Ch_Monster01_A_75
+  - first:
+      213: -2949981527265636686
+    second: Ch_Monster01_A_76
+  - first:
+      213: -1719521285795040276
+    second: Ch_Monster01_A_77
+  - first:
+      213: 1367619690092713197
+    second: Ch_Monster01_A_78
+  - first:
+      213: -3821686962115435013
+    second: Ch_Monster01_A_79
+  - first:
+      213: -5471301425323212665
+    second: Ch_Monster01_A_80
+  - first:
+      213: -4064028197189491217
+    second: Ch_Monster01_A_81
+  - first:
+      213: -1219327799980422471
+    second: Ch_Monster01_A_82
+  - first:
+      213: -5197299671667171761
+    second: Ch_Monster01_A_83
+  - first:
+      213: -4352725677052246917
+    second: Ch_Monster01_A_84
+  - first:
+      213: 4804262313752173580
+    second: Ch_Monster01_A_85
+  - first:
+      213: 1036425000342362976
+    second: Ch_Monster01_A_86
+  - first:
+      213: 8220940248620173855
+    second: Ch_Monster01_A_87
+  - first:
+      213: -7051282388057841124
+    second: Ch_Monster01_A_88
+  - first:
+      213: -1841209682983719314
+    second: Ch_Monster01_A_89
+  - first:
+      213: 6563743197959902918
+    second: Ch_Monster01_A_90
+  - first:
+      213: -3097726744867724450
+    second: Ch_Monster01_A_91
+  - first:
+      213: -7193741304451791585
+    second: Ch_Monster01_A_92
+  - first:
+      213: 4774180640932073216
+    second: Ch_Monster01_A_93
+  - first:
+      213: 7790557247296652582
+    second: Ch_Monster01_A_94
+  - first:
+      213: -6752657834563656299
+    second: Ch_Monster01_A_95
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ch_Monster01_A_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 671
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bc43216b8dfdfef0800000000000000
+      internalID: -72623243896075080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_1
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 671
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec1f9dc3149690430800000000000000
+      internalID: 3749643893677355470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_2
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 671
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d982355d7fe4c690800000000000000
+      internalID: -7582672551005746728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_3
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 671
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db2fd27861b9a4f50800000000000000
+      internalID: 6866471102939263677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_4
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 671
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9742f3bf02e2c4500800000000000000
+      internalID: 381730787608700025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_5
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 671
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8062480c5100400b0800000000000000
+      internalID: -5763481529703193080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_6
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 671
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8675a41f367538210800000000000000
+      internalID: 1334006001393358696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_7
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 671
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f58a892644ff10a50800000000000000
+      internalID: 6485745607567255647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_8
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 671
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b1fbbafd74bb5c10800000000000000
+      internalID: 2043425309113184696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_9
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 671
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afe675f4e2aa4bed0800000000000000
+      internalID: -2399105585605284102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_10
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 671
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5963e40fcb1eee70800000000000000
+      internalID: 9146278469190248797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_11
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 671
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4645ab5c595eb23f0800000000000000
+      internalID: -924392867064294300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_12
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 575
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af7922bf9c587640800000000000000
+      internalID: 5077910420818853798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_13
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 575
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e7155e9c96ecf0d0800000000000000
+      internalID: -3387579259343792160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_14
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 575
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b142f2253d3602440800000000000000
+      internalID: 4909033353101911067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_15
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 575
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7164364102451ec60800000000000000
+      internalID: 7845644522613851671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_16
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 575
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff0efb7cf0fc30f0800000000000000
+      internalID: -1135768038801534979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_17
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 575
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d820728c689a615f0800000000000000
+      internalID: -786254688580861299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_18
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 575
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bffc8109066b61f0800000000000000
+      internalID: -1050633899194122313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_19
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 575
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c3c614da232b6d30800000000000000
+      internalID: 4425669725675504577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_20
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 575
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac99c0c4ae918cff0800000000000000
+      internalID: -15734104606860854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_21
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 575
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7be54cb10411e7090800000000000000
+      internalID: -8034965718140952905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_22
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 575
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daf0df2b8cdc1c0e0800000000000000
+      internalID: -2251292076828454995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_23
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 575
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0041e362c084f9f90800000000000000
+      internalID: -6944752883363605504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_24
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 479
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9452b1d0c8cb103e0800000000000000
+      internalID: -2089181442421873335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_25
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 479
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de6dd00a70a9ecd00800000000000000
+      internalID: 994901925236168429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_26
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 479
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b4ff3948898fda70800000000000000
+      internalID: 8853946610871170224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_27
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 479
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1522a121f8c4fe90800000000000000
+      internalID: -6992743383422589669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_28
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 479
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb52f0e7c7e324220800000000000000
+      internalID: 2468604250164241855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_29
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 479
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a7884a61b7e3990800000000000000
+      internalID: -7404345400170612076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_30
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 479
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0208e632af19e690800000000000000
+      internalID: -7572486516880440821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_31
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 479
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bbd3ae0923078070800000000000000
+      internalID: 8108453128978029493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_32
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 479
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a22ba773d0e2d81e0800000000000000
+      internalID: -2194046809159323094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_33
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 479
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 354d5f437e00631e0800000000000000
+      internalID: -2218584773407419309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_34
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 479
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a32053e3aab6640800000000000000
+      internalID: 5074336589317028389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_35
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 479
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a0459334aebbac70800000000000000
+      internalID: 8983483494169919655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_36
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 383
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b2e66bd46128eaf0800000000000000
+      internalID: -367006652569296208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_37
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 383
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b1ec55449f9a970800000000000000
+      internalID: 8766812221546044164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_38
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 383
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbf157b1755173a40800000000000000
+      internalID: 5347766546392752059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_39
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 383
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33b17ca4cb50d0b0800000000000000
+      internalID: -5705959827613568193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_40
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 383
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72e1f0678fa7e1f30800000000000000
+      internalID: 4548207881241959975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_41
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 383
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 818d08119d877d0b0800000000000000
+      internalID: -5703957529344550888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_42
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 383
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08f6dad51f4cd0810800000000000000
+      internalID: 1733257972545318784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_43
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 383
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32921746afdf2030800000000000000
+      internalID: 3472239742975906366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_44
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 383
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e026eaa806c204260800000000000000
+      internalID: 7079707407381586446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_45
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 383
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ff4e5232c438a7a0800000000000000
+      internalID: -6365780064614854671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_46
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 383
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5619c59e7c0c0fe0800000000000000
+      internalID: -1221587661105850788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_47
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 383
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d993efab1e132c0800000000000000
+      internalID: -4453530363247354518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_48
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 287
+        width: 41
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0951f9c318f74dd80800000000000000
+      internalID: -8226810426254486128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_49
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 287
+        width: 38
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aee74786f5ea9c60800000000000000
+      internalID: 7825820149504011940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_50
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 287
+        width: 41
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74674d051c8b908c0800000000000000
+      internalID: -4032488850909268409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_51
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 287
+        width: 41
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf6651f1b264b32f0800000000000000
+      internalID: -992122141886028036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_52
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 287
+        width: 38
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f59ccfcb1894dd4e0800000000000000
+      internalID: -1955325841638635169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_53
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 287
+        width: 41
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e40e31844f9b4fa60800000000000000
+      internalID: 7706989321170182222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_54
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 287
+        width: 41
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc07ea8079dd66850800000000000000
+      internalID: 6370022363717595343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_55
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 287
+        width: 38
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e0e48dad416a7610800000000000000
+      internalID: 1619714002244657377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_56
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 287
+        width: 41
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be3ce698c411c4e40800000000000000
+      internalID: 5641903453609313259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_57
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 287
+        width: 41
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2914472dc4fc7fb90800000000000000
+      internalID: -7208064749727891054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_58
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 287
+        width: 38
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0908bc236a5fbb7e0800000000000000
+      internalID: -1748533936137731952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_59
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 287
+        width: 41
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 955ad2b67a9cebe00800000000000000
+      internalID: 1062508283000890713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_60
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 191
+        width: 47
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e44b5060c34ccf80800000000000000
+      internalID: -8085012737507506975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_61
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 191
+        width: 47
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65aaccae66fdce220800000000000000
+      internalID: 2516631924912204374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_62
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 191
+        width: 47
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65f5ff7c947a65b30800000000000000
+      internalID: 4275788831564717910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_63
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 191
+        width: 47
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac93e7129e3202920800000000000000
+      internalID: 2963408039006058954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_64
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 191
+        width: 47
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aff5a673a6d3c10c0800000000000000
+      internalID: -4603737192673943558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_65
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 191
+        width: 47
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ed3da60d58a483b0800000000000000
+      internalID: -5511094926497202712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_66
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 191
+        width: 47
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ae631312344d580800000000000000
+      internalID: -8803337561763812807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_67
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 191
+        width: 47
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 900891197b8c4e780800000000000000
+      internalID: -8654571893160312823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_68
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 191
+        width: 47
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e47f8709428f0c170800000000000000
+      internalID: 8196824157740660558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_69
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 191
+        width: 47
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 246a0bb757ab920f0800000000000000
+      internalID: -1141176016812595646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_70
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 191
+        width: 47
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3995d268fab4da160800000000000000
+      internalID: 7038365009892432275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_71
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 191
+        width: 47
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e72724fef1759df50800000000000000
+      internalID: 6906647298219078270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_72
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 95
+        width: 41
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da3dce5203f6e6aa0800000000000000
+      internalID: -6165868587238239315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_73
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 95
+        width: 41
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 013144bdee3e00560800000000000000
+      internalID: 7278067612851114768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_74
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 95
+        width: 41
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f16539e655af7b290800000000000000
+      internalID: -7874550178599709153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_75
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 95
+        width: 41
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bad56652ebbfff10800000000000000
+      internalID: 2305768115023502007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_76
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 95
+        width: 41
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2be0e5d3e6f8f07d0800000000000000
+      internalID: -2949981527265636686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_77
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 95
+        width: 41
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce3b67040880328e0800000000000000
+      internalID: -1719521285795040276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_78
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 95
+        width: 41
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de45ec7bcd2caf210800000000000000
+      internalID: 1367619690092713197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_79
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 95
+        width: 41
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf52e54c4f3a6fac0800000000000000
+      internalID: -3821686962115435013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_80
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 95
+        width: 41
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 780858487580214b0800000000000000
+      internalID: -5471301425323212665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_81
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 95
+        width: 41
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5695503eba997c0800000000000000
+      internalID: -4064028197189491217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_82
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 95
+        width: 41
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba886183d3141fe0800000000000000
+      internalID: -1219327799980422471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_83
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 95
+        width: 41
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4e160f2c7b7fd7b0800000000000000
+      internalID: -5197299671667171761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_84
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 0
+        width: 44
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b744496fe030893c0800000000000000
+      internalID: -4352725677052246917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_85
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 0
+        width: 38
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c9eface1b2ca240800000000000000
+      internalID: 4804262313752173580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_86
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 0
+        width: 44
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b9dbdeb0f126e00800000000000000
+      internalID: 1036425000342362976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_87
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 0
+        width: 44
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1a87b68995a61270800000000000000
+      internalID: 8220940248620173855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_88
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 0
+        width: 38
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1228d00700d42e90800000000000000
+      internalID: -7051282388057841124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_89
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 0
+        width: 44
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6eeeb86c85b276e0800000000000000
+      internalID: -1841209682983719314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_90
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 0
+        width: 44
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c6594f89a9171b50800000000000000
+      internalID: 6563743197959902918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_91
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 0
+        width: 38
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e53aee020f9a205d0800000000000000
+      internalID: -3097726744867724450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_92
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 0
+        width: 44
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f15881ec562ba2c90800000000000000
+      internalID: -7193741304451791585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_93
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 0
+        width: 44
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00f8d4c8ffb414240800000000000000
+      internalID: 4774180640932073216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_94
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 0
+        width: 38
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 625467f4a8e9d1c60800000000000000
+      internalID: 7790557247296652582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_Monster01_A_95
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 0
+        width: 44
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59523110a7db942a0800000000000000
+      internalID: -6752657834563656299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ch_Monster01_A_0: -72623243896075080
+      Ch_Monster01_A_1: 3749643893677355470
+      Ch_Monster01_A_10: 9146278469190248797
+      Ch_Monster01_A_11: -924392867064294300
+      Ch_Monster01_A_12: 5077910420818853798
+      Ch_Monster01_A_13: -3387579259343792160
+      Ch_Monster01_A_14: 4909033353101911067
+      Ch_Monster01_A_15: 7845644522613851671
+      Ch_Monster01_A_16: -1135768038801534979
+      Ch_Monster01_A_17: -786254688580861299
+      Ch_Monster01_A_18: -1050633899194122313
+      Ch_Monster01_A_19: 4425669725675504577
+      Ch_Monster01_A_2: -7582672551005746728
+      Ch_Monster01_A_20: -15734104606860854
+      Ch_Monster01_A_21: -8034965718140952905
+      Ch_Monster01_A_22: -2251292076828454995
+      Ch_Monster01_A_23: -6944752883363605504
+      Ch_Monster01_A_24: -2089181442421873335
+      Ch_Monster01_A_25: 994901925236168429
+      Ch_Monster01_A_26: 8853946610871170224
+      Ch_Monster01_A_27: -6992743383422589669
+      Ch_Monster01_A_28: 2468604250164241855
+      Ch_Monster01_A_29: -7404345400170612076
+      Ch_Monster01_A_3: 6866471102939263677
+      Ch_Monster01_A_30: -7572486516880440821
+      Ch_Monster01_A_31: 8108453128978029493
+      Ch_Monster01_A_32: -2194046809159323094
+      Ch_Monster01_A_33: -2218584773407419309
+      Ch_Monster01_A_34: 5074336589317028389
+      Ch_Monster01_A_35: 8983483494169919655
+      Ch_Monster01_A_36: -367006652569296208
+      Ch_Monster01_A_37: 8766812221546044164
+      Ch_Monster01_A_38: 5347766546392752059
+      Ch_Monster01_A_39: -5705959827613568193
+      Ch_Monster01_A_4: 381730787608700025
+      Ch_Monster01_A_40: 4548207881241959975
+      Ch_Monster01_A_41: -5703957529344550888
+      Ch_Monster01_A_42: 1733257972545318784
+      Ch_Monster01_A_43: 3472239742975906366
+      Ch_Monster01_A_44: 7079707407381586446
+      Ch_Monster01_A_45: -6365780064614854671
+      Ch_Monster01_A_46: -1221587661105850788
+      Ch_Monster01_A_47: -4453530363247354518
+      Ch_Monster01_A_48: -8226810426254486128
+      Ch_Monster01_A_49: 7825820149504011940
+      Ch_Monster01_A_5: -5763481529703193080
+      Ch_Monster01_A_50: -4032488850909268409
+      Ch_Monster01_A_51: -992122141886028036
+      Ch_Monster01_A_52: -1955325841638635169
+      Ch_Monster01_A_53: 7706989321170182222
+      Ch_Monster01_A_54: 6370022363717595343
+      Ch_Monster01_A_55: 1619714002244657377
+      Ch_Monster01_A_56: 5641903453609313259
+      Ch_Monster01_A_57: -7208064749727891054
+      Ch_Monster01_A_58: -1748533936137731952
+      Ch_Monster01_A_59: 1062508283000890713
+      Ch_Monster01_A_6: 1334006001393358696
+      Ch_Monster01_A_60: -8085012737507506975
+      Ch_Monster01_A_61: 2516631924912204374
+      Ch_Monster01_A_62: 4275788831564717910
+      Ch_Monster01_A_63: 2963408039006058954
+      Ch_Monster01_A_64: -4603737192673943558
+      Ch_Monster01_A_65: -5511094926497202712
+      Ch_Monster01_A_66: -8803337561763812807
+      Ch_Monster01_A_67: -8654571893160312823
+      Ch_Monster01_A_68: 8196824157740660558
+      Ch_Monster01_A_69: -1141176016812595646
+      Ch_Monster01_A_7: 6485745607567255647
+      Ch_Monster01_A_70: 7038365009892432275
+      Ch_Monster01_A_71: 6906647298219078270
+      Ch_Monster01_A_72: -6165868587238239315
+      Ch_Monster01_A_73: 7278067612851114768
+      Ch_Monster01_A_74: -7874550178599709153
+      Ch_Monster01_A_75: 2305768115023502007
+      Ch_Monster01_A_76: -2949981527265636686
+      Ch_Monster01_A_77: -1719521285795040276
+      Ch_Monster01_A_78: 1367619690092713197
+      Ch_Monster01_A_79: -3821686962115435013
+      Ch_Monster01_A_8: 2043425309113184696
+      Ch_Monster01_A_80: -5471301425323212665
+      Ch_Monster01_A_81: -4064028197189491217
+      Ch_Monster01_A_82: -1219327799980422471
+      Ch_Monster01_A_83: -5197299671667171761
+      Ch_Monster01_A_84: -4352725677052246917
+      Ch_Monster01_A_85: 4804262313752173580
+      Ch_Monster01_A_86: 1036425000342362976
+      Ch_Monster01_A_87: 8220940248620173855
+      Ch_Monster01_A_88: -7051282388057841124
+      Ch_Monster01_A_89: -1841209682983719314
+      Ch_Monster01_A_9: -2399105585605284102
+      Ch_Monster01_A_90: 6563743197959902918
+      Ch_Monster01_A_91: -3097726744867724450
+      Ch_Monster01_A_92: -7193741304451791585
+      Ch_Monster01_A_93: 4774180640932073216
+      Ch_Monster01_A_94: 7790557247296652582
+      Ch_Monster01_A_95: -6752657834563656299
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

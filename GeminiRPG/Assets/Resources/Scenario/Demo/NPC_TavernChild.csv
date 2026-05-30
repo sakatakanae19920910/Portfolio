@@ -1,0 +1,23 @@
+Label,Command,Speaker,text_ja,text_en,Args
+# ==================== 酒場 小柄な子供 ====================
+# 初回のみミタマ石を渡す
+
+,Branch,,,,flag=TavernChildVisited; jumpTo=Child_Return
+,Text,小柄な子供,ぼく、まえはずっとおなかすいてた。,I used to be hungry all the time.,
+,Text,小柄な子供,いまはおなかすかないから、すき。,Now I never get hungry. I like that.,
+,Text,小柄な子供,ずっとここにいたいなあ。,I wanna stay here forever.,
+,BranchChar,,,,char=Mizuki; jumpTo=Child_Oneesan
+,Text,小柄な子供,あ、おにいちゃん。,"Oh! It's you, mister!",
+,Jump,,,,jumpTo=Child_Give
+Child_Oneesan,Text,小柄な子供,あ、おねえちゃん。,"Oh! It's you, miss!",
+Child_Give,Text,小柄な子供,これ、あげる。,Here. This is for you.,
+,Text,小柄な子供,そとでひろったの。ぴかぴかしてるから、とっておいたんだ。,"I found it outside. It was all shiny, so I saved it for you.",
+,GiveItem,,,,name=MitamaStone
+,Text,,ミタマ石を手に入れた！,You found a Mitama Stone!,
+,SetFlag,,,,flag=TavernChildVisited
+,End,,,,
+
+Child_Return,Text,小柄な子供,ぼく、まえはずっとおなかすいてた。,I used to be hungry all the time.,
+,Text,小柄な子供,いまはおなかすかないから、すき。,Now I never get hungry. I like that.,
+,Text,小柄な子供,ずっとここにいたいなあ。,I wanna stay here forever.,
+,End,,,,

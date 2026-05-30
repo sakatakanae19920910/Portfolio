@@ -1,0 +1,6 @@
+Label,Command,Speaker,text_ja,text_en,Args
+# ミタマ石 フィールド拾得メッセージ
+# MitamaStoneItem.cs から呼び出される
+# GiveItem は MitamaStoneItem.cs 側で処理済みのため不要
+,Text,,ミタマ石を手に入れた！,You found a Mitama Stone!,
+,End,,,,

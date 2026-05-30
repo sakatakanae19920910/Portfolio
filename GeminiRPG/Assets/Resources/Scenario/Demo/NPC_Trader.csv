@@ -1,0 +1,34 @@
+Label,Command,Speaker,text_ja,text_en,Args
+# ==================== 交換屋 店主 ====================
+# ミタマ石7個と「きらきら星」を交換する
+# BranchItem でミタマ石数をチェック
+
+# きらきら星を既に持っている場合
+,BranchItem,,,,name=KirakiraStar; jumpTo=Trader_AlreadyHave
+# ミタマ石が7個以上あれば交換可能
+,BranchItem,,,,name=MitamaStone; count=7; jumpTo=Trader_CanExchange
+# 足りない場合
+,Text,交換屋店主,いらっしゃいませ。貴重な品が入荷いたしましたので、¥nミタマ石7つと交換を受け付けております。,"Welcome. A rare item has come into stock,¥nand we are accepting exchanges for 7 Mitama Stones.",
+,Text,交換屋店主,ミタマ石、あと{MitamaRemaining}つで交換できますよ。,Just {MitamaRemaining} more Mitama Stone(s) and the exchange is yours.,
+,End,,,,
+
+# ミタマ石7個以上・交換可能
+Trader_CanExchange,Text,交換屋店主,おや、お客様。ミタマ石を7つお持ちですね。,"My, my. You've got 7 Mitama Stones, I see.",
+,Text,交換屋店主,こちらのきらきら星と交換されますか？,Would you care to exchange them for this Little Star?,
+,Choice,,交換する,Exchange,jumpTo=Trader_Exchange
+,Choice,,やめておく,Cancel,jumpTo=Trader_Decline
+,Stop,,,,
+
+Trader_Exchange,GiveItem,,,,name=KirakiraStar
+,Text,交換屋店主,毎度ありがとうございます。大切な方へのプレゼントに最適ですよ。,"Thank you, as always. It makes the perfect gift for someone dear.",
+,SE,,,,name=ItemGet
+,Text,,きらきら星を手に入れた！,You found a Little Star!,
+,End,,,,
+
+Trader_Decline,Text,交換屋店主,またのお越しをお待ちしております。,We look forward to your next visit.,
+,End,,,,
+
+# きらきら星を既に持っている
+Trader_AlreadyHave,Text,交換屋店主,いらっしゃいませ。……おや、もうきらきら星をお持ちなのですね。,"Welcome. ...My, my, you already have a Little Star, I see.",
+,Text,交換屋店主,大切な方へ、どうぞ。,Do give it to someone dear.,
+,End,,,,

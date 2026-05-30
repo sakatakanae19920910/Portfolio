@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76f708689c7ea48a181ab89588b3438b, type: 3}
+  m_Name: Pechi_cat
+  m_EditorClassIdentifier: 
+  characterId: peti_cat
+  characterName: "\u30DA\u30C1"
+  description: 
+  faceIcon: {fileID: 0}
+  battleSprite: {fileID: 0}
+  walkAnimator: {fileID: 0}
+  baseHP: 85
+  baseMP: 26
+  baseAttack: 20
+  baseDefense: 17
+  baseMagic: 14
+  baseMagicDefense: 17
+  baseSpeed: 65
+  baseTargetRate: 100
+  growthHP: 9
+  growthMP: 5
+  growthAttack: 4
+  growthMagic: 3
+  learnableSkills: []

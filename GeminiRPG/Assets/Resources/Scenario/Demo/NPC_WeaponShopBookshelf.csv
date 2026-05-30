@@ -1,0 +1,11 @@
+Label,Command,Speaker,text_ja,text_en,Args
+# ==================== 武器屋 本棚 ====================
+# 『戦場における不愉快な症状とその対処法』
+
+,Text,,『戦場における不愉快な症状とその対処法 - 二度目の"おしまい"を回避するために』,"『Unpleasant Conditions on the Battlefield and How to Deal with Them¥n— On Avoiding a Second and Final ""End""』",
+,Text,,拝啓、すでに一度お亡くなりになられた諸氏へ¥nこの本は、死んでもなお戦場へ赴こうと試みる物好きな皆様への、¥n筆者からのささやかなおせっかいを著したものでございます。,"Dear Esteemed Departed,¥nThis volume is the author's modest meddling, offered to those peculiar souls who would still march to the battlefield even in death.",
+,Text,,【毒】¥n毎ターンじわじわと体力を奪われる。¥nまるで、退屈な親戚の長話を聞かされているようですな。,"[Poison]¥nSaps your health little by little each turn.¥nMuch like enduring a dull relative's interminable story.",
+,Text,,【猛毒】¥n通常の毒より大きなダメージ。死体に鞭打つとはまさにこのことです。,"[Severe Poison]¥nDeals greater damage than ordinary poison.¥nKicking a man when he's down — quite literally.",
+,Text,,【麻痺】¥n敏捷性が半分になり、行動ができないことも。¥nどうせ我々には急いで行く先などありはしないというのに。,"[Paralysis]¥nHalves your agility, and may stop you from acting at all.¥nThough none of us has anywhere to be in a hurry, of course.",
+,Text,,どうか、諸氏が二度目の死を迎えることなく、この理不尽な戦場から"死還"されますことを。¥n¥n敬具　故・紳士より,"May you return from this absurd battlefield without meeting a second death.¥n¥nYours faithfully,¥nThe Late Gentleman",
+,End,,,,

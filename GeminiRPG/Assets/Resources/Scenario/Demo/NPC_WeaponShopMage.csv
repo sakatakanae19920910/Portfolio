@@ -1,0 +1,7 @@
+Label,Command,Speaker,text_ja,text_en,Args
+# ==================== 武器屋 魔導士の女性 ====================
+
+,Text,魔導士の女性,この死後の世界に来たばかりの頃は、¥n私が信じていたものが全て覆されたことに、ただただ圧倒されたわ。,"When I first arrived in this afterworld,¥nI was utterly overwhelmed — everything I had believed, overturned.",
+,Text,魔導士の女性,肉体の死の先にある精神世界。¥n魔法が現実のものとなっている。,"A world of the spirit, beyond the death of the body.¥nMagic, made manifest.",
+,Text,魔導士の女性,今の私にとっては、この死後の世界全体が、¥n解明すべき現象に満ちた、尽きることのない探求の実験場のようなものね。,"To me now, this entire afterworld is like¥nan endless laboratory, brimming with phenomena to be unraveled.",
+,End,,,,

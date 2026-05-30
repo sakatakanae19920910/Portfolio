@@ -1,0 +1,19 @@
+Label,Command,Speaker,text_ja,text_en,Args
+# ==================== 武器屋 明るい狩人 ====================
+# 初回のみミタマ石を渡す
+
+,Branch,,,,flag=HunterVisited; jumpTo=Hunter_Return
+,Text,明るい狩人,心の持ちようで死後の世界での"生き方"も変わるんだよね。,"The way you carry your heart changes how you ""live"" in this afterworld, you know.",
+,Text,明るい狩人,私たちってもう死んでるじゃない？¥nだったらもう一度『終わる』ことを恐れるより、今を楽しむべきだと思うんだ！,"We're already dead, right?¥nSo rather than fearing another ""ending,"" I think we should enjoy the here and now!",
+,Text,明るい狩人,心さえ折れなければ消滅せずにすむ……。¥n魂の力は意志の力。¥nこの世界で"生き残る"ってのは、身体じゃなくて"心"の問題なんだよ。,"As long as your heart doesn't break, you won't fade away...¥nThe power of the soul is the power of will.¥n""Surviving"" in this world isn't about the body — it's about the heart.",
+,Text,明るい狩人,あ、そうだ。これ持っていきなよ。,Oh right. Take this with you.,
+,Text,明るい狩人,狩りの帰りに拾ったんだ。私は使い道なくてさ。,Picked it up on my way back from a hunt. I've got no use for it.,
+,GiveItem,,,,name=MitamaStone
+,Text,,ミタマ石を手に入れた！,You found a Mitama Stone!,
+,SetFlag,,,,flag=HunterVisited
+,End,,,,
+
+Hunter_Return,Text,明るい狩人,心の持ちようで死後の世界での"生き方"も変わるんだよね。,"The way you carry your heart changes how you ""live"" in this afterworld, you know.",
+,Text,明るい狩人,私たちってもう死んでるじゃない？¥nだったらもう一度『終わる』ことを恐れるより、今を楽しむべきだと思うんだ！,"We're already dead, right?¥nSo rather than fearing another ""ending,"" I think we should enjoy the here and now!",
+,Text,明るい狩人,心さえ折れなければ消滅せずにすむ……。¥n魂の力は意志の力。¥nこの世界で"生き残る"ってのは、身体じゃなくて"心"の問題なんだよ。,"As long as your heart doesn't break, you won't fade away...¥nThe power of the soul is the power of will.¥n""Surviving"" in this world isn't about the body — it's about the heart.",
+,End,,,,

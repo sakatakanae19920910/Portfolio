@@ -1,0 +1,8 @@
+Label,Command,Speaker,text_ja,text_en,Args
+# 進行禁止エリア（階段・町外出口）用モノローグ
+# AreaBlocker.cs から呼び出される。BranchChar でナギ編/ミズキ編を分岐
+,BranchChar,,,,char=Mizuki; jumpTo=Mizuki_Block
+,Monologue,ナギ,今日は町を探索しよう。,Let's explore the town today.,face=
+,End,,,,
+Mizuki_Block,Monologue,ミズキ,今日は町を探索しよう。,Let's explore the town today.,face=
+,End,,,,

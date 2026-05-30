@@ -1,0 +1,20 @@
+Label,Command,Speaker,text_ja,text_en,Args
+# ==================== 武器屋 学者（交互） ====================
+# ScholarTalked フラグで1回目と2回目を交互に切り替える
+
+,Branch,,,,flag=ScholarTalked; jumpTo=Scholar_2nd
+
+# ---------- 1回目：輪廻の鏡の話 ----------
+,Text,学者,この世界に暮らすものは、程度の差こそあれ、輪廻の鏡を……転生を目指すものなんだ。,"Everyone who dwells in this world seeks the Mirror of Samsara... rebirth, that is.¥nTo one degree or another.",
+,Text,学者,だけど、魔物が輪廻の鏡の元へ向かったという話は聞いたことがない。,"And yet, I've never once heard of a monster making for the Mirror of Samsara.",
+,Text,学者,輪廻の鏡が壊れてから、魔物の数が大きく増えた。¥n世界のバランスが崩れている証拠だろう。,"Since the Mirror of Samsara broke, the number of monsters has risen sharply.¥nProof, I'd say, that the world's balance is breaking down.",
+,SetFlag,,,,flag=ScholarTalked
+,End,,,,
+
+# ---------- 2回目：隣の魔導士との関係 ----------
+Scholar_2nd,Text,学者,……えっ？隣の彼女との関係！？,"...Huh?! My relationship with her, the one next to me?!",
+,Text,学者,……その、単に、一緒にいることが多いというだけだよ。,"...I mean, we just... happen to be near each other often. That's all.",
+,Text,学者,彼女とは考え方の違いもあるけど、議論を交わす相手としては最適だし、¥n彼女の考察は興味深いものが多いし。¥n……尊敬、してるんだ。,"We don't always see eye to eye, but as someone to debate with, she's ideal.¥nAnd her observations — many of them are fascinating.¥n...I respect her. I do.",
+,Text,学者,……もし、生きてる時に出会えてたら……いや！なんでもないよ。,...If only we'd met back when we were alive...¥nNo! Forget I said anything.,
+,ClearFlag,,,,flag=ScholarTalked
+,End,,,,

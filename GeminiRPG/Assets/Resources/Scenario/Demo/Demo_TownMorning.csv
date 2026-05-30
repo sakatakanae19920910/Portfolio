@@ -1,0 +1,62 @@
+Label,Command,Speaker,text_ja,text_en,Args
+# ==================== デモ：朝の導入 ====================
+# PartnerHomeScene（1階）入場時に ScenarioExecutor が自動再生
+# BranchChar でミズキ編／ナギ編に分岐
+
+Morning_Start,Branch,,,,flag=MorningPlayed; jumpTo=Morning_End
+,SetFlag,,,,flag=MorningPlayed
+,BranchChar,,,,char=Mizuki; jumpTo=Morning_Rui
+
+# ==================== カイリの家1階（ナギ編） ====================
+Morning_Kairi,PlayerFace,,,,dir=left
+,BGM,,,,name=Scene_Morning; noWait=true
+,PlayerWalkTo,,,,target=Morning_KairiSpot; face=left; via=Morning_KairiVia3|Morning_KairiVia0
+,NPCFacePlayer,,,,npc=Kairi
+,Text,カイリ,あ、おはよ、ナギ。よく眠れたか？,"Oh, morning, Nagi. Sleep well?",face=Smile02
+,Text,ナギ,おはよう、カイリ。うん、ぐっすりだったよ,"Morning, Kairi. Yeah, slept like a log.",face=Smile01
+,Text,カイリ,そりゃよかった。朝飯……って言っても、¥n食べなくても平気なのがこの世界だけどさ。¥n気分だけでも、茶でも飲むか？,"Glad to hear it. Breakfast... well, not that anyone needs to eat in this world.¥nStill, want some tea? Just for the feel of it.",face=Smile01
+,Text,ナギ,ありがとう。……でも、味しないんだろ？,"Thanks. ...But it doesn't taste like anything, does it?",face=Smile02
+,Text,カイリ,雰囲気だよ、雰囲気。生きてた頃の真似事ってやつ。,"It's about the mood, the mood. Like playing at being alive again.",face=Smile03
+,Text,ナギ,……わかる気がするよ、それ。¥n記憶がなくても、体が覚えてることがある。,"...I think I get that.¥nEven without memories, the body remembers some things.",face=Smile03
+,Text,ナギ,キミといると不思議と安心するのも¥nその一つかもしれない。,Being strangely at ease around you¥nmight be one of them.,face=Smile04
+,Text,カイリ,……！¥n急に何言って……。,...!¥nWhere's this coming from...,face=01
+,Text,ナギ,あ、そうだ。今日は町を見て回ってくるよ。¥n記憶を取り戻すための手がかりがあるかもしれないし。,Oh right. I'm going to look around town today.¥nMaybe I'll find something to help get my memories back.,face=Smile05
+,Text,カイリ,…………,..........,face=02
+,Text,カイリ,ああ、わかった。行ってらっしゃい。,"Yeah, alright. Take care.",face=Smile05
+,Text,ナギ,うん、行ってきます。,Yeah. See you.,face=Smile01
+,Wait,,,,time=0.2
+,HideDialogue,,,,
+,CameraStop,,,,
+,PlayerWalkTo,,,,target=Morning_KairiExit; via=Morning_KairiVia1|Morning_KairiVia2; noWait=true
+,Wait,,,,time=1.0
+,Text,カイリ,……あいつほんと心臓に悪い。,...That kid's seriously bad for my heart.,face=Smile04
+,Text,カイリ,動いてないはずなのに……。,Even though it shouldn't even be beating...,face=Smile05
+,PlayerFadeOut,,,,time=0.5
+,LoadScene,,,,scene=TownScene; time=2; spawn=SpawnFromPartnerHouse; face=down
+
+# ==================== ルイの家1階（ミズキ編） ====================
+Morning_Rui,PlayerFace,,,,dir=left
+,BGM,,,,name=Scene_Morning; noWait=true
+,PlayerWalkTo,,,,target=Morning_RuiSpot; face=left; via=Morning_RuiVia3|Morning_RuiVia0
+,NPCFacePlayer,,,,npc=Rui
+,Text,ルイ,おっ、おはよーミズキ！今日はいい天気だよ。,"Oh—morning, Mizuki! Nice weather today.",face=Smile01
+,Text,ミズキ,おはよう、ルイ。もう起きてたんだね。,"Morning, Rui. You're up already.",face=Smile01
+,Text,ルイ,薬屋は朝が勝負だからね。¥n……って言っても、今日はお客ゼロだけど。,An apothecary lives and dies by the morning.¥n...Not that I've had a single customer today.,face=Smile02
+,Text,ミズキ,あはは、いつもそうじゃない？,"Haha, isn't it always like that?",face=Smile02
+,Text,ルイ,ふふん。¥nこの美人店主の顔を拝みに来る客なんか¥nいくらでもいるから。¥n今日はたまたまみんな忙しいんだろ。,Heh.¥nPlenty of folks come just to get a look at this gorgeous shopkeeper.¥nEveryone just happens to be busy today.,face=Smile10
+,Text,ミズキ,そういうことにしとこっか。,"Sure, let's go with that.",face=Smile03
+,Text,ミズキ,……でも、まだ不思議な感じがする。¥n死んでるのに薬が必要って。,...Still feels strange though.¥nNeeding medicine when you're already dead.,face=01
+,Text,ルイ,生きてる奴らも身体がおかしけりゃ薬を使う。¥n死んだ連中だってそうしたいのさ。,The living reach for medicine when their body's off.¥nThe dead want to do the same.,face=Smile02
+,Text,ミズキ,……そういうものなのかな。,...I guess that's how it is.,face=Smile04
+,Text,ミズキ,あ、ルイ。今日はちょっと町を見てくるね。¥n記憶を取り戻す手がかり探し。,Oh Rui. I'm going to look around town today.¥nLooking for clues to get my memories back.,face=Smile01
+,Text,ルイ,ああ。¥n……帰り、ここで待ってるから。,Sure.¥n...I'll be here when you get back.,face=Smile01
+,Text,ルイ,変な奴についていくなよ。,Don't go following any weirdos.,face=Smile05
+,Text,ミズキ,もう、子供じゃないんだから大丈夫！,"Come on, I'm not a kid. I'll be fine!",face=Smile05
+,Text,ミズキ,……ルイ。¥nいつもありがとね。,...Rui.¥nThanks. For always being there.,face=Smile06
+,Text,ルイ,な……んだよ、急に。,"Wh—what's this, all of a sudden.",face=02
+,Text,ミズキ,ふふっ、行ってきます！,"Hehe, I'm off!",face=Smile07
+,Text,ルイ,……ん。行ってらっしゃい！,...Mm. Take care!,face=Smile04
+,LoadScene,,,,scene=TownScene; time=2; spawn=SpawnFromPartnerHouse; face=down
+
+# 2回目以降の入室はここへジャンプ（朝のシーンをスキップ）
+Morning_End,End,,,,

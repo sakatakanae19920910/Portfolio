@@ -1,0 +1,22 @@
+Label,Command,Speaker,text_ja,text_en,Args
+# ==================== 酒場 やさぐれた男性 ====================
+# 初回のみミタマ石を渡す
+
+,Branch,,,,flag=GrumpVisited; jumpTo=Grump_Return
+,Text,やさぐれた男性,ちっ……酒の味もしねえ。,Tch... can't even taste the damn booze.,
+,Text,やさぐれた男性,なあアンタ、聞いたか？輪廻の鏡が壊されたって。,"Hey, you. You hear the news? The Mirror of Samsara got smashed.",
+,Text,やさぐれた男性,あれは俺たちの……¥n次の人生への、たった一本の橋だったんだ。,That was our...¥nthe one and only bridge to our next life.,
+,Text,やさぐれた男性,だがどっかのイカれた野郎に、ぶっ壊されちまった。,And some lunatic out there went and smashed it to pieces.,
+,Text,やさぐれた男性,………。,..........,
+,Text,やさぐれた男性,ほらよ、これでも持ってけ。床に転がってたんだ。,"Here, take it. Was just rolling around on the floor.",
+,Text,やさぐれた男性,光るだけで、酒の代わりにもなりゃしねえ。,All it does is glow. Won't even pass for a drink.,
+,GiveItem,,,,name=MitamaStone
+,Text,,ミタマ石を手に入れた！,You found a Mitama Stone!,
+,SetFlag,,,,flag=GrumpVisited
+,End,,,,
+
+Grump_Return,Text,やさぐれた男性,ちっ……酒の味もしねえ。,Tch... can't even taste the damn booze.,
+,Text,やさぐれた男性,なあアンタ、聞いたか？輪廻の鏡が壊されたって。,"Hey, you. You hear the news? The Mirror of Samsara got smashed.",
+,Text,やさぐれた男性,あれは俺たちの……¥n次の人生への、たった一本の橋だったんだ。,That was our...¥nthe one and only bridge to our next life.,
+,Text,やさぐれた男性,どっかのイカれた野郎に、ぶっ壊されちまった。,Some lunatic out there went and smashed it to pieces.,
+,End,,,,

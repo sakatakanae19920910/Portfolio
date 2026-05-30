@@ -1,0 +1,12 @@
+Label,Command,Speaker,text_ja,text_en,Args
+# ==================== 占い師（デモ案内専用） ====================
+# TownScene 内の占い師NPC
+# ショートデモ版の目的と操作を案内する
+
+,Text,占い師,こんにちは。このショートデモ版でできることをお伝えしますわ。,"Hello, dear. Allow me to tell you what you can do in this short demo.",
+,Text,占い師,戦闘システムはまだ用意できておりませんの。¥nほほ、これでも一応RPGですのよ。,"The battle system isn't ready just yet.¥nHoho, it's an RPG, for what it's worth.",
+,Text,占い師,代わりにあなたのパートナーにプレゼントをお渡しして、¥n喜ぶ顔を見ることができますわ。,"Instead, you may present a gift to your partner¥nand see the joy on their face.",
+,Text,占い師,町を探索したり人々と会話をすることで手に入るミタマ石を集めてくださいませ。,"Do go about collecting Mitama Stones, found by exploring the town and speaking with its people.",
+,Text,占い師,交換屋に持っていくことである品物と交換できますわ。,"Take them to the Trader, and they may be exchanged for something special.",
+,Text,占い師,それではRPG『流転のジェミニ』をどうぞよろしくお願いいたしますわ。,Now then—I do hope you enjoy Gemini in Flux.,
+,End,,,,

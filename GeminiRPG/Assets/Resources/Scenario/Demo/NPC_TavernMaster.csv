@@ -1,0 +1,12 @@
+Label,Command,Speaker,text_ja,text_en,Args
+# ==================== 酒場 マスター ====================
+# ミタマ石は渡さない。世界観の説明役
+
+,Text,マスター,……注文かい。,...What'll it be?,
+,Text,マスター,この店には何でも揃ってる。¥n味のしない酒も、匂いのない飯も。,"We've got everything here.¥nFlavorless drinks, scentless food.",
+,Text,マスター,みんな、生きてた頃のことを思い出したくてここに来るんだ。,Folks come here wanting to remember what being alive felt like.,
+,Text,マスター,……あんたは？,...And you?,
+,Text,マスター,まあ、黙って飲むだけでも構わない。,"Well, sitting and drinking in silence is fine too.",
+,Text,マスター,ここじゃ誰も急かしやしない。,Nobody rushes anybody here.,
+,Text,マスター,死人に、急ぐことはないからな。,The dead have nowhere they need to be.,
+,End,,,,

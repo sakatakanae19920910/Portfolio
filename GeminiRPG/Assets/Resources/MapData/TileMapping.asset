@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02fb5dc6d47824b529d90309f0c103ed, type: 3}
+  m_Name: TileMapping
+  m_EditorClassIdentifier: 
+  entries:
+  - cellType: ground
+    tile: {fileID: 11400000, guid: a056548cd0710411ea4802d4c1ec2199, type: 2}
+    layer: Ground
+    hasCollision: 0
+  - cellType: plaza
+    tile: {fileID: 11400000, guid: 7f1ed9fa40300452d8a9f1a15798d813, type: 2}
+    layer: Ground
+    hasCollision: 0
+  - cellType: path
+    tile: {fileID: 11400000, guid: 718773a78d146452e99856b8a36839b6, type: 2}
+    layer: Path
+    hasCollision: 0
+  - cellType: path-main
+    tile: {fileID: 11400000, guid: 2ab6895c866964c23b08ee37e6192482, type: 2}
+    layer: Path
+    hasCollision: 0
+  - cellType: pharmacy
+    tile: {fileID: 11400000, guid: dc13909de14bf406883ed0b1d58ae4eb, type: 2}
+    layer: Buildings
+    hasCollision: 1
+  - cellType: weapon
+    tile: {fileID: 11400000, guid: dc13909de14bf406883ed0b1d58ae4eb, type: 2}
+    layer: Buildings
+    hasCollision: 1
+  - cellType: tavern
+    tile: {fileID: 11400000, guid: 0f80e637d4cd1415680d96f10fde48f0, type: 2}
+    layer: Buildings
+    hasCollision: 1
+  - cellType: exchange
+    tile: {fileID: 11400000, guid: 99e5d8128040b42ecb476b87c710e572, type: 2}
+    layer: Buildings
+    hasCollision: 1
+  - cellType: fortune
+    tile: {fileID: 11400000, guid: 99e5d8128040b42ecb476b87c710e572, type: 2}
+    layer: Buildings
+    hasCollision: 1
+  - cellType: wall
+    tile: {fileID: 11400000, guid: dc13909de14bf406883ed0b1d58ae4eb, type: 2}
+    layer: Buildings
+    hasCollision: 1
+  - cellType: pharmacy-roof
+    tile: {fileID: 11400000, guid: cd502497df6474a6aac23604f6c9186b, type: 2}
+    layer: Rooftop
+    hasCollision: 0
+  - cellType: weapon-roof
+    tile: {fileID: 11400000, guid: 6866b48b55d4e4847bb19d27c6e1b2b1, type: 2}
+    layer: Rooftop
+    hasCollision: 0
+  - cellType: tavern-roof
+    tile: {fileID: 11400000, guid: 7938942ca91314a68a4b77d579e038cd, type: 2}
+    layer: Rooftop
+    hasCollision: 0
+  - cellType: exchange-roof
+    tile: {fileID: 11400000, guid: 620d54344a5d54292b3ebefd772b398b, type: 2}
+    layer: Rooftop
+    hasCollision: 0
+  - cellType: fortune-roof
+    tile: {fileID: 11400000, guid: f8f70944ae6704ce3927729c17eaf5d5, type: 2}
+    layer: Rooftop
+    hasCollision: 0
+  - cellType: tree
+    tile: {fileID: 0}
+    layer: Objects
+    hasCollision: 1
+  - cellType: bush
+    tile: {fileID: 0}
+    layer: Objects
+    hasCollision: 0
+  - cellType: rock
+    tile: {fileID: 0}
+    layer: Objects
+    hasCollision: 1
+  - cellType: fence
+    tile: {fileID: 0}
+    layer: Objects
+    hasCollision: 1
+  - cellType: bench
+    tile: {fileID: 0}
+    layer: Objects
+    hasCollision: 1
+  - cellType: door
+    tile: {fileID: 0}
+    layer: Objects
+    hasCollision: 0
+  - cellType: water
+    tile: {fileID: 11400000, guid: 5df886b3616f04d55bc4896324332353, type: 2}
+    layer: Objects
+    hasCollision: 1
+  - cellType: entry
+    tile: {fileID: 0}
+    layer: Path
+    hasCollision: 0

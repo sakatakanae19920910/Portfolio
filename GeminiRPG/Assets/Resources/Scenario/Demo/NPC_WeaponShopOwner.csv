@@ -1,0 +1,17 @@
+Label,Command,Speaker,text_ja,text_en,Args
+# ==================== 武器屋 店主 ====================
+# 初回のみミタマ石を渡す
+
+,Branch,,,,flag=WeaponShopOwnerVisited; jumpTo=Owner_Return
+,Text,武器屋店主,武器をお求めかい。,Here for a weapon?,
+,Text,武器屋店主,悪いな、今は調整中なんだ。,"Sorry, the stock's still being sorted out right now.",
+,Text,武器屋店主,代わりと言ってはなんだが……。,"Not much of a substitute, but here...",
+,GiveItem,,,,name=MitamaStone
+,Text,,ミタマ石を手に入れた！,You found a Mitama Stone!,
+,Text,武器屋店主,交換屋で使えるものだ。持っていきな。,"You can use it at the Trader's. Go on, take it.",
+,SetFlag,,,,flag=WeaponShopOwnerVisited
+,End,,,,
+
+Owner_Return,Text,武器屋店主,うちは情報交換の場としても開放してるんだ。,"I keep this place open as a spot to trade information, too.",
+,Text,武器屋店主,いろんなやつに話を聞いてみるといいぞ。,You should go talk to all sorts of folks.,
+,End,,,,

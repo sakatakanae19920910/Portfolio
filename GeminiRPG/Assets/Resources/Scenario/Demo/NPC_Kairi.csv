@@ -1,0 +1,29 @@
+Label,Command,Speaker,text_ja,text_en,Args
+# ==================== カイリ（ナギ編） ====================
+# きらきら星があればギフトシーン（デモエンド）へ、なければ普通の会話
+
+,BranchItem,,,,name=KirakiraStar; jumpTo=Kairi_Gift
+
+# ---------- 普通の会話 ----------
+,Text,カイリ,ナギ、ここの生活にも慣れてきたみたいでよかった。,Nagi. Glad you're settling in here.,face=Smile02
+,Text,カイリ,……町の外行くときは、一言言えよ。,...Just give me a heads-up before you leave town.,face=Smile03
+,End,,,,
+
+# ---------- ギフトシーン（きらきら星を持っている場合） ----------
+Kairi_Gift,BGM,,,,name=Scene_Morning
+,Text,カイリ,え……？これを、オレに？,Huh...? This... is for me?,face=07
+,Text,カイリ,そんな……貴重な品だろ。お前が持ってた方がいい。,"That's... that's something rare. You should keep it.",face=02
+,Text,カイリ,……どうしても？¥n……そっか。なら、もらおうかな。,"...You're sure?¥n...Alright. Guess I'll take it, then.",face=Smile05
+,Text,カイリ,綺麗だな……。¥nなんだか、元気付けられてるみたいな気持ちになる。,It's beautiful...¥nSomehow it feels like it's lifting my spirits.,face=Smile06
+,Text,カイリ,へへ。……ありがと、ナギ。,"Hehe... Thanks, Nagi.",face=Smile07
+,FadeOut,,,,time=1; color=black
+,PlayerHide,,,,
+,NPCFace,,,,dir=down
+,BGM,,,,action=Stop
+,FadeIn,,,,time=1
+,Text,カイリ,ナギ、今度はどこ行ったんだろ。¥n無茶してなきゃいいけど。,I wonder where Nagi went off to.¥nHope he's not doing anything reckless.,face=Smile05
+,Text,カイリ,……一等星、か。,"...The brightest star, huh.",face=04
+,Text,カイリ,……ナギ。もしお前が知らないオレがいたとしても、¥nそれでもお前は……。,...Nagi. Even if there's a side of me you don't know...¥nyou would still...,face=05
+,Text,カイリ,いや、考えるな——。,No—stop thinking.,face=06
+,FadeOut,,,,time=1; color=black
+,LoadScene,,,,scene=DemoEndScene; time=2
